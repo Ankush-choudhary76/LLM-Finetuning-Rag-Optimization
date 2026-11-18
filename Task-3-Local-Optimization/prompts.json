@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "category": "General Reasoning",
+    "prompt": "A farmer needs to cross a river with a wolf, a goat, and a cabbage. The boat can only carry the farmer and one item at a time. If left alone, the wolf will eat the goat, or the goat will eat the cabbage. How can the farmer get everything across safely? Provide a step-by-step solution."
+  },
+  {
+    "id": 2,
+    "category": "Python Programming",
+    "prompt": "Write a clean, efficient Python function `find_longest_consecutive_subsequence(nums: list[int]) -> int` that runs in O(n) time complexity and returns the length of the longest consecutive elements sequence. Include docstring and edge-case handling."
+  },
+  {
+    "id": 3,
+    "category": "C++ Programming",
+    "prompt": "Write a modern C++20 thread-safe generic bounded queue (Producer-Consumer queue) using `std::mutex`, `std::condition_variable`, and RAII locks. Include `push`, `pop`, and `empty` methods."
+  },
+  {
+    "id": 4,
+    "category": "JSON Generation",
+    "prompt": "Extract the key details from this text and return strictly a valid JSON object without markdown formatting: 'Dr. Jane Smith scheduled an emergency orthopedic surgery for patient #4892 on 2026-11-20 at 14:30 in Operating Room 3B with Dr. Alan Davis as assistant.' Required keys: surgeon, patient_id, procedure, date, time, operating_room, assistant."
+  },
+  {
+    "id": 5,
+    "category": "Summarization",
+    "prompt": "Summarize the following passage in exactly three bullet points focusing on architectural principles: 'Microservices architecture structures an application as a collection of loosely coupled, independently deployable services. Each service is organized around business capabilities, owns its private database to prevent coupling, and communicates through lightweight protocols such as gRPC or REST APIs. Continuous integration, containerization with Docker, and automated orchestration via Kubernetes enable high availability, fault tolerance, and independent scalability across distributed engineering teams.'"
+  },
+  {
+    "id": 6,
+    "category": "Mathematical Reasoning",
+    "prompt": "Solve this probability problem step-by-step: In a deck of 52 standard playing cards, what is the exact probability of drawing two cards of the same rank (a pair) without replacement? Express your answer as a simplified fraction and decimal percentage."
+  },
+  {
+    "id": 7,
+    "category": "Instruction Following",
+    "prompt": "Write a 4-sentence paragraph describing a futuristic Mars colony. Strict constraints: 1) The first sentence must begin with the word 'Beneath'. 2) The third sentence must include the word 'chlorophyll'. 3) Do not use the letter 'e' anywhere in the second sentence. 4) The paragraph must conclude with a question."
+  },
+  {
+    "id": 8,
+    "category": "Information Extraction",
+    "prompt": "Extract all technical specifications from the text below into a clean Markdown table with columns: [Component, Specification, Unit/Value]. Text: 'The Apollo deep-learning inference accelerator features 128 Tensor Cores operating at 1.85 GHz, 24 GB of HBM3 memory delivering 1.2 TB/s bandwidth, a TDP of 250 Watts, and PCIe Gen 5.0 x16 host interface.'"
+  },
+  {
+    "id": 9,
+    "category": "Technical Explanation",
+    "prompt": "Explain the difference between PagedAttention and standard multi-head attention in LLM serving. Why does PagedAttention alleviate memory fragmentation in unified or GPU VRAM? Explain clearly for a senior systems engineer."
+  },
+  {
+    "id": 10,
+    "category": "Logical Reasoning",
+    "prompt": "Evaluate the validity of this syllogism: 'Premise 1: All quantum computing algorithms require phase coherence. Premise 2: Some cryptographic cracking methods do not require phase coherence. Conclusion: Therefore, some cryptographic cracking methods are not quantum computing algorithms.' Explain whether the argument is deductively valid or invalid and why."
+  }
+]
+

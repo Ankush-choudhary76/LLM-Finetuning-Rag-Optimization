@@ -1,0 +1,123 @@
+[
+  {
+    "id": "Q1",
+    "question": "What are the four core functions of the NIST AI Risk Management Framework Core?",
+    "correct_answer": "The four core functions of the NIST AI RMF Core are GOVERN, MAP, MEASURE, and MANAGE.",
+    "expected_page": 20,
+    "expected_passage": "The AI RMF Core consists of four functions: GOVERN, MAP, MEASURE, and MANAGE. The functions are broken down into sub-functions, and each sub-function into categories and actions.",
+    "key_terms": ["GOVERN", "MAP", "MEASURE", "MANAGE", "Core functions"]
+  },
+  {
+    "id": "Q2",
+    "question": "Which function in the NIST AI RMF Core is designed to be cross-cutting and infuses risk management across the other three functions?",
+    "correct_answer": "The GOVERN function is designed to be cross-cutting, providing oversight and institutional structure that integrates across Map, Measure, and Manage.",
+    "expected_page": 21,
+    "expected_passage": "The GOVERN function is a cross-cutting function that informs and is informed by the other three functions. A culture of risk management is cultivated and implemented through governance.",
+    "key_terms": ["GOVERN", "cross-cutting", "culture of risk management"]
+  },
+  {
+    "id": "Q3",
+    "question": "What is the primary objective of the MAP function in the NIST AI RMF?",
+    "correct_answer": "The MAP function establishes the context for AI system risks, identifying AI capabilities, context of use, lifecycle stages, legal/regulatory requirements, and potential societal impacts.",
+    "expected_page": 24,
+    "expected_passage": "The MAP function establishes the context to understand AI risks. Activities in this function enable a context-aware approach to AI risk management and system design.",
+    "key_terms": ["MAP", "establishes context", "context-aware approach"]
+  },
+  {
+    "id": "Q4",
+    "question": "What is the role of the MEASURE function in AI risk management?",
+    "correct_answer": "The MEASURE function employs quantitative, qualitative, or hybrid tools and methodologies to assess, evaluate, and track AI risks, impacts, and system metrics.",
+    "expected_page": 27,
+    "expected_passage": "The MEASURE function employs quantitative, qualitative, or hybrid techniques to analyze, assess, track, and evaluate AI risks, impacts, and trustworthiness.",
+    "key_terms": ["MEASURE", "quantitative, qualitative, or hybrid", "evaluate AI risks"]
+  },
+  {
+    "id": "Q5",
+    "question": "How does the MANAGE function address identified AI risks?",
+    "correct_answer": "The MANAGE function allocates resources to risk response strategies, implementing controls, mitigation measures, and monitoring protocols to reduce AI risks on an ongoing basis.",
+    "expected_page": 31,
+    "expected_passage": "The MANAGE function entails allocating resources to mapped and measured risks on an ongoing basis and in a manner that aligns with organizational risk tolerance.",
+    "key_terms": ["MANAGE", "allocating resources", "risk tolerance"]
+  },
+  {
+    "id": "Q6",
+    "question": "What are the key characteristics of trustworthy AI identified in the NIST framework?",
+    "correct_answer": "The characteristics include valid and reliable, safe, secure and resilient, accountable and transparent, explainable and interpretable, privacy-enhanced, and fair with harmful bias managed.",
+    "expected_page": 12,
+    "expected_passage": "Characteristics of trustworthy AI systems include: valid and reliable, safe, secure and resilient, accountable and transparent, explainable and interpretable, privacy-enhanced, and fair with harmful bias managed.",
+    "key_terms": ["valid and reliable", "safe", "secure and resilient", "explainable", "fair with harmful bias managed"]
+  },
+  {
+    "id": "Q7",
+    "question": "How does the framework define AI system validity and reliability?",
+    "correct_answer": "Validity is the confirmation that an AI system satisfies requirements for a specific intended use, and reliability is the ability of a system to perform consistently as intended under stated conditions.",
+    "expected_page": 13,
+    "expected_passage": "Validation is the confirmation that the requirements for a specific intended use or application have been fulfilled. Reliability is the ability of an item to perform as required, without failure, for a given time interval.",
+    "key_terms": ["Validation", "intended use", "Reliability", "perform without failure"]
+  },
+  {
+    "id": "Q8",
+    "question": "What are the three broad categories of AI bias discussed in NIST AI 100-1?",
+    "correct_answer": "The three broad categories are systemic bias, computational and statistical bias, and human-cognitive bias.",
+    "expected_page": 17,
+    "expected_passage": "Bias can be systemic (institutional and historical), computational and statistical (dataset distribution errors), or human-cognitive (heuristics and flawed perceptions).",
+    "key_terms": ["systemic", "computational and statistical", "human-cognitive"]
+  },
+  {
+    "id": "Q9",
+    "question": "Why is explainability distinct from interpretability according to the framework?",
+    "correct_answer": "Explainability refers to a representation of the mechanisms underlying AI outputs, whereas interpretability refers to the meaning of AI outputs in the context of their designed functional purpose.",
+    "expected_page": 16,
+    "expected_passage": "Explainability refers to a representation of the mechanisms underlying an AI system's operation, whereas interpretability refers to the meaning of AI systems' output in the context of their designed functional purpose.",
+    "key_terms": ["Explainability", "mechanisms underlying", "interpretability", "meaning of AI systems' output"]
+  },
+  {
+    "id": "Q10",
+    "question": "What is an AI Profile in the context of the NIST AI RMF?",
+    "correct_answer": "An AI RMF Profile is the customization of the AI RMF Core functions, categories, and subcategories for a specific sector, application, or risk posture.",
+    "expected_page": 35,
+    "expected_passage": "AI RMF Profiles are the implementations of the AI RMF functions, categories, and subcategories for a specific setting or application based on requirements, risk tolerance, and resources.",
+    "key_terms": ["AI RMF Profiles", "implementations", "specific setting", "risk tolerance"]
+  },
+  {
+    "id": "Q11",
+    "question": "What role does third-party risk management play in AI governance?",
+    "correct_answer": "Organizations must account for external software components, pre-trained foundation models, commercial datasets, and cloud service providers within their risk boundaries.",
+    "expected_page": 22,
+    "expected_passage": "Risks associated with third-party software, data, or AI models are identified, tracked, and managed as part of organizational governance and supply chain risk protocols.",
+    "key_terms": ["third-party software", "data, or AI models", "supply chain risk"]
+  },
+  {
+    "id": "Q12",
+    "question": "What are TEVV tasks according to the NIST framework?",
+    "correct_answer": "TEVV stands for Test, Evaluation, Verification, and Validation, which are processes used across the AI lifecycle to ensure systems meet requirements and operate safely.",
+    "expected_page": 28,
+    "expected_passage": "Test, evaluation, verification, and validation (TEVV) processes occur throughout the AI lifecycle to assess system performance, safety, security, and alignment with specifications.",
+    "key_terms": ["Test, evaluation, verification, and validation", "TEVV", "AI lifecycle"]
+  },
+  {
+    "id": "Q13",
+    "question": "What is meant by residual risk in the AI lifecycle?",
+    "correct_answer": "Residual risk is the risk that remains after risk response measures, controls, and mitigations have been implemented.",
+    "expected_page": 33,
+    "expected_passage": "Residual risk refers to the risk remaining after risk treatment and mitigation strategies have been planned and implemented.",
+    "key_terms": ["Residual risk", "remaining after risk treatment", "mitigation"]
+  },
+  {
+    "id": "Q14",
+    "question": "How does human-in-the-loop (HITL) oversight support safe AI system deployment?",
+    "correct_answer": "Human-in-the-loop oversight provides human decision-making intervention, validation, and discretionary override capability in high-stakes operational environments.",
+    "expected_page": 32,
+    "expected_passage": "Human-in-the-loop mechanisms provide critical oversight, enabling human intervention, discretionary review, and rollback capabilities where AI automation presents high residual risk.",
+    "key_terms": ["Human-in-the-loop", "oversight", "human intervention", "discretionary review"]
+  },
+  {
+    "id": "Q15",
+    "question": "What is the recommended frequency for reviewing and updating AI risk assessments?",
+    "correct_answer": "Risk assessments should be updated continuously or periodically throughout the AI lifecycle, especially when significant modifications, domain shifts, or new failure modes arise.",
+    "expected_page": 34,
+    "expected_passage": "AI risk tracking and assessment should be an iterative, continuous activity revisited periodically and upon any significant system updates, environmental drift, or emerging incidents.",
+    "key_terms": ["iterative, continuous activity", "revisited periodically", "environmental drift"]
+  }
+]
+

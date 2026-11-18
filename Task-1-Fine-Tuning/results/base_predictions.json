@@ -1,0 +1,3055 @@
+[
+  {
+    "input": "Schedule a meeting with Björn Jan 10, 2027 at 6:30 PM regarding investor pitch rehearsal. [Seq #160]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Björn",
+      "date": "Jan 10, 2027",
+      "time": "18:30",
+      "topic": "investor pitch rehearsal"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": {\n    \"name\": \"Björn\",\n    \"role\": \"Speaker\"\n  },\n  \"date\": \"2027-01-10\",\n  \"time\": \"14:30:00\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": {
+        "name": "Björn",
+        "role": "Speaker"
+      },
+      "date": "2027-01-10",
+      "time": "14:30:00"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Set a reminder: backup production Postgres databases on next weekend. [Seq #209]",
+    "ground_truth": {
+      "action": "create_reminder",
+      "reminder": "backup production Postgres databases",
+      "date": "next weekend",
+      "time": null
+    },
+    "raw_prediction": "{\n  \"action\": \"create_reminder\",\n  \"reminder\": {\n    \"date\": \"next weekend\",\n    \"time\": \"18:00\"\n  },\n  \"priority\": null,\n  \"due_date\": null,\n  \"assignee\": null\n}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "next weekend",
+        "time": "18:00"
+      },
+      "priority": null,
+      "due_date": null,
+      "assignee": null
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Set up a sync with François at noon on next Monday to discuss AI sprint kickoff.",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "François",
+      "date": "next Monday",
+      "time": "12:00",
+      "topic": "AI sprint kickoff"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": [\"François\"],\n  \"date\": \"next Monday\",\n  \"time\": \"noon\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": [
+        "François"
+      ],
+      "date": "next Monday",
+      "time": "noon"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Add task 'optimize PostgreSQL indexing for users table' with low priority due next Friday assigned to Dmitri. [Seq #184]",
+    "ground_truth": {
+      "action": "manage_task",
+      "task": "optimize PostgreSQL indexing for users table",
+      "priority": "low",
+      "due_date": "next Friday",
+      "assignee": "Dmitri"
+    },
+    "raw_prediction": "{\n  \"action\": \"add_task\",\n  \"task\": {\n    \"name\": \"optimize PostgreSQL indexing for users table\",\n    \"priority\": \"low\",\n    \"due_date\": \"next Friday\"\n  },\n  \"assignee\": \"Dmitri\"\n}",
+    "parsed_prediction": {
+      "action": "add_task",
+      "task": {
+        "name": "optimize PostgreSQL indexing for users table",
+        "priority": "low",
+        "due_date": "next Friday"
+      },
+      "assignee": "Dmitri"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Remind me to book flight tickets for PyCon next weekend at 6:30 PM. [Seq #128]",
+    "ground_truth": {
+      "action": "create_reminder",
+      "reminder": "book flight tickets for PyCon",
+      "date": "next weekend",
+      "time": "18:30"
+    },
+    "raw_prediction": "{\n  \"action\": \"create_reminder\",\n  \"reminder\": {\n    \"date\": \"next weekend\",\n    \"time\": \"6:30 PM\"\n  },\n  \"seq_number\": 128\n}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "next weekend",
+        "time": "6:30 PM"
+      },
+      "seq_number": 128
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Put Hackathon Day 1 on calendar for tomorrow at Auditorium. [Seq #21]",
+    "ground_truth": {
+      "action": "calendar_event",
+      "event_title": "Hackathon Day 1",
+      "date": "tomorrow",
+      "time": null,
+      "location": "Auditorium"
+    },
+    "raw_prediction": "{\n  \"action\": \"calendar_event\",\n  \"event_title\": \"Hackathon Day 1\",\n  \"date\": \"tomorrow\",\n  \"time\": \"09:00-10:00 AM\",\n  \"location\": \"Auditorium\"\n}",
+    "parsed_prediction": {
+      "action": "calendar_event",
+      "event_title": "Hackathon Day 1",
+      "date": "tomorrow",
+      "time": "09:00-10:00 AM",
+      "location": "Auditorium"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Remind me to check server disk usage Jan 10, 2027 at 8 PM. [Seq #172]",
+    "ground_truth": {
+      "action": "create_reminder",
+      "reminder": "check server disk usage",
+      "date": "Jan 10, 2027",
+      "time": "20:00"
+    },
+    "raw_prediction": "{\n  \"action\": \"create_reminder\",\n  \"reminder\": {\n    \"date\": \"2027-01-10T20:00:00Z\",\n    \"time\": \"19:00\"\n  },\n  \"priority\": null,\n  \"due_date\": null,\n  \"assignee\": null\n}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "2027-01-10T20:00:00Z",
+        "time": "19:00"
+      },
+      "priority": null,
+      "due_date": null,
+      "assignee": null
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Remind me to renew the SSL certificates next Monday at 8 PM.",
+    "ground_truth": {
+      "action": "create_reminder",
+      "reminder": "renew the SSL certificates",
+      "date": "next Monday",
+      "time": "20:00"
+    },
+    "raw_prediction": "{\n  \"action\": \"create_reminder\",\n  \"reminder\": {\n    \"date\": \"2023-11-07T20:00:00\",\n    \"time\": \"14:00\"\n  },\n  \"topic\": \"SSL Certificates\"\n}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "2023-11-07T20:00:00",
+        "time": "14:00"
+      },
+      "topic": "SSL Certificates"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Can you put a meeting with Vikram on my calendar Dec 15th at 10:30 AM? [Seq #88]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Vikram",
+      "date": "Dec 15th",
+      "time": "10:30",
+      "topic": null
+    },
+    "raw_prediction": "{\"action\": \"schedule_meeting\", \"person\": \"Vikram\", \"date\": \"15-12\", \"time\": \"10:30 AM\"}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": "Vikram",
+      "date": "15-12",
+      "time": "10:30 AM"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Assign task to O'Connor: optimize PostgreSQL indexing for users table. Priority is medium. [Seq #129]",
+    "ground_truth": {
+      "action": "manage_task",
+      "task": "optimize PostgreSQL indexing for users table",
+      "priority": "medium",
+      "due_date": null,
+      "assignee": "O'Connor"
+    },
+    "raw_prediction": "{\n  \"action\": \"manage_task\",\n  \"task\": {\n    \"name\": \"optimize PostgreSQL indexing for users table\",\n    \"priority\": \"medium\",\n    \"due_date\": \"[Seq #129]\"\n  }\n}",
+    "parsed_prediction": {
+      "action": "manage_task",
+      "task": {
+        "name": "optimize PostgreSQL indexing for users table",
+        "priority": "medium",
+        "due_date": "[Seq #129]"
+      }
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Save contact: Søren, working as VP of Product at OpenAI. Email is søren@deepmind.google and phone is +1-555-761-1894. [Seq #45]",
+    "ground_truth": {
+      "action": "extract_contact",
+      "name": "Søren",
+      "role": "VP of Product",
+      "company": "OpenAI",
+      "email": "søren@deepmind.google",
+      "phone": "+1-555-761-1894"
+    },
+    "raw_prediction": "{\n  \"action\": \"extract_contact\",\n  \"name\": \"Søren\",\n  \"role\": \"VP of Product\",\n  \"company\": \"OpenAI\",\n  \"email\": \"søren@deepmind.google\",\n  \"phone\": \"+1-555-761-1894\"\n}",
+    "parsed_prediction": {
+      "action": "extract_contact",
+      "name": "Søren",
+      "role": "VP of Product",
+      "company": "OpenAI",
+      "email": "søren@deepmind.google",
+      "phone": "+1-555-761-1894"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Call Björn back tomorrow morning at 9 AM. [Variant #17]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Björn",
+      "date": "tomorrow",
+      "time": "09:00",
+      "topic": "call back"
+    },
+    "raw_prediction": "{\n    \"action\": \"schedule_meeting\",\n    \"person\": \"Björn\",\n    \"date\": \"tomorrow morning\",\n    \"time\": \"9 AM\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": "Björn",
+      "date": "tomorrow morning",
+      "time": "9 AM"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Set a reminder: book flight tickets for PyCon on next Friday.",
+    "ground_truth": {
+      "action": "create_reminder",
+      "reminder": "book flight tickets for PyCon",
+      "date": "next Friday",
+      "time": null
+    },
+    "raw_prediction": "{\"action\": \"create_reminder\", \"reminder\": {\"date\": \"next Friday\", \"time\": \"09:00\"}, \"topic\": \"book flight tickets\"}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "next Friday",
+        "time": "09:00"
+      },
+      "topic": "book flight tickets"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Put All-Hands Meeting on calendar for next weekend at Zoom.",
+    "ground_truth": {
+      "action": "calendar_event",
+      "event_title": "All-Hands Meeting",
+      "date": "next weekend",
+      "time": null,
+      "location": "Zoom"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"date\": \"next weekend\",\n  \"time\": \"09:00 AM - 10:00 AM\",\n  \"topic\": \"All Hands Meeting\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "date": "next weekend",
+      "time": "09:00 AM - 10:00 AM",
+      "topic": "All Hands Meeting"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Task: optimize PostgreSQL indexing for users table. Urgent!",
+    "ground_truth": {
+      "action": "manage_task",
+      "task": "optimize PostgreSQL indexing for users table",
+      "priority": "urgent",
+      "due_date": null,
+      "assignee": null
+    },
+    "raw_prediction": "{\n  \"action\": \"manage_task\",\n  \"task\": {\n    \"priority\": \"high\",\n    \"due_date\": \"now\",\n    \"assignee\": \"admin\"\n  },\n  \"description\": \"Optimize PostgreSQL indexing for the users table.\"\n}",
+    "parsed_prediction": {
+      "action": "manage_task",
+      "task": {
+        "priority": "high",
+        "due_date": "now",
+        "assignee": "admin"
+      },
+      "description": "Optimize PostgreSQL indexing for the users table."
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Sync at 17:00. [Variant #62]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": null,
+      "date": null,
+      "time": "17:00",
+      "topic": null
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"date\": \"2023-09-18T17:00:00Z\",\n  \"time\": \"17:00\",\n  \"topic\": \"[Variant #62]\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "date": "2023-09-18T17:00:00Z",
+      "time": "17:00",
+      "topic": "[Variant #62]"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Save contact: Dmitri, working as Staff Research Scientist at Google. Email is dmitri@university.edu and phone is +1-555-765-3688. [Seq #39]",
+    "ground_truth": {
+      "action": "extract_contact",
+      "name": "Dmitri",
+      "role": "Staff Research Scientist",
+      "company": "Google",
+      "email": "dmitri@university.edu",
+      "phone": "+1-555-765-3688"
+    },
+    "raw_prediction": "{\n  \"action\": \"extract_contact\",\n  \"name\": \"Dmitri\",\n  \"role\": \"Staff Research Scientist\",\n  \"company\": \"Google\",\n  \"email\": \"dmitri@university.edu\",\n  \"phone\": \"+1-555-765-3688\"\n}",
+    "parsed_prediction": {
+      "action": "extract_contact",
+      "name": "Dmitri",
+      "role": "Staff Research Scientist",
+      "company": "Google",
+      "email": "dmitri@university.edu",
+      "phone": "+1-555-765-3688"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Send a quick note to Mei checking in on Q3 roadmap review.",
+    "ground_truth": {
+      "action": "draft_email",
+      "recipient": "Mei",
+      "subject": "Follow-up: Q3 roadmap review",
+      "tone": "casual"
+    },
+    "raw_prediction": "{\n  \"action\": \"send_note\",\n  \"to\": {\n    \"name\": \"Mei\",\n    \"role\": \"Project Manager\"\n  },\n  \"content\": \"Hi Mei, I wanted to check in on the Q3 roadmap review. Any updates you can share would be greatly appreciated.\"\n}",
+    "parsed_prediction": {
+      "action": "send_note",
+      "to": {
+        "name": "Mei",
+        "role": "Project Manager"
+      },
+      "content": "Hi Mei, I wanted to check in on the Q3 roadmap review. Any updates you can share would be greatly appreciated."
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Set up a sync with Björn at noon on the 4th of July to discuss AI sprint kickoff.",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Björn",
+      "date": "the 4th of July",
+      "time": "12:00",
+      "topic": "AI sprint kickoff"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": [\"Björn\"],\n  \"date\": \"2023-07-04T12:00:00\",\n  \"time\": \"12:00:00\",\n  \"topic\": \"Discuss AI Sprint Kickoff\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": [
+        "Björn"
+      ],
+      "date": "2023-07-04T12:00:00",
+      "time": "12:00:00",
+      "topic": "Discuss AI Sprint Kickoff"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Task: fix memory leak in worker daemon. Urgent! [Seq #107]",
+    "ground_truth": {
+      "action": "manage_task",
+      "task": "fix memory leak in worker daemon",
+      "priority": "urgent",
+      "due_date": null,
+      "assignee": null
+    },
+    "raw_prediction": "{\n  \"action\": \"manage_task\",\n  \"task\": {\n    \"priority\": null,\n    \"due_date\": null,\n    \"assignee\": null,\n    \"description\": \"fix memory leak in worker daemon\"\n  },\n  \"name\": \"memory leak\",\n  \"role\": null,\n  \"company\": null,\n  \"email\": null,\n  \"phone\": null\n}",
+    "parsed_prediction": {
+      "action": "manage_task",
+      "task": {
+        "priority": null,
+        "due_date": null,
+        "assignee": null,
+        "description": "fix memory leak in worker daemon"
+      },
+      "name": "memory leak",
+      "role": null,
+      "company": null,
+      "email": null,
+      "phone": null
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Sync at 17:00. [Variant #92]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": null,
+      "date": null,
+      "time": "17:00",
+      "topic": null
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"date\": \"2023-04-08T17:00:00Z\",\n  \"time\": \"17:00\",\n  \"topic\": \"[Variant #92]\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "date": "2023-04-08T17:00:00Z",
+      "time": "17:00",
+      "topic": "[Variant #92]"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Meeting with Liam at 6:30 PM next Friday. [Seq #64]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Liam",
+      "date": "next Friday",
+      "time": "18:30",
+      "topic": null
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": {\n    \"name\": \"Liam\"\n  },\n  \"date\": \"next Friday\",\n  \"time\": \"6:30 PM\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": {
+        "name": "Liam"
+      },
+      "date": "next Friday",
+      "time": "6:30 PM"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Save contact: Aoi, working as Staff Research Scientist at Google. Email is aoi@startup.ai and phone is +1-555-659-4580.",
+    "ground_truth": {
+      "action": "extract_contact",
+      "name": "Aoi",
+      "role": "Staff Research Scientist",
+      "company": "Google",
+      "email": "aoi@startup.ai",
+      "phone": "+1-555-659-4580"
+    },
+    "raw_prediction": "{\n  \"action\": \"extract_contact\",\n  \"name\": \"Aoi\",\n  \"role\": \"Staff Research Scientist\",\n  \"company\": \"Google\",\n  \"email\": \"aoi@startup.ai\",\n  \"phone\": \"+1-555-659-4580\"\n}",
+    "parsed_prediction": {
+      "action": "extract_contact",
+      "name": "Aoi",
+      "role": "Staff Research Scientist",
+      "company": "Google",
+      "email": "aoi@startup.ai",
+      "phone": "+1-555-659-4580"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Write a follow-up email to François about budget allocation sync.",
+    "ground_truth": {
+      "action": "draft_email",
+      "recipient": "François",
+      "subject": "budget allocation sync",
+      "tone": "follow-up"
+    },
+    "raw_prediction": "{\n  \"action\": \"draft_email\",\n  \"recipient\": {\n    \"name\": \"François\",\n    \"role\": \"Manager\",\n    \"company\": \"XYZ Corporation\"\n  },\n  \"subject\": \"Follow-Up: Budget Allocation Sync\",\n  \"tone\": \"informative\",\n  \"date\": \"2023-09-15T14:00:00Z\",\n  \"time\": \"14:00:00Z\"\n}",
+    "parsed_prediction": {
+      "action": "draft_email",
+      "recipient": {
+        "name": "François",
+        "role": "Manager",
+        "company": "XYZ Corporation"
+      },
+      "subject": "Follow-Up: Budget Allocation Sync",
+      "tone": "informative",
+      "date": "2023-09-15T14:00:00Z",
+      "time": "14:00:00Z"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Remind me later. [Variant #33]",
+    "ground_truth": {
+      "action": "create_reminder",
+      "reminder": null,
+      "date": null,
+      "time": null
+    },
+    "raw_prediction": "{\n  \"action\": \"create_reminder\",\n  \"reminder\": {\n    \"date\": \"2023-10-07T18:00:00Z\",\n    \"time\": \"18:00\"\n  },\n  \"priority\": null,\n  \"due_date\": null,\n  \"assignee\": null\n}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "2023-10-07T18:00:00Z",
+        "time": "18:00"
+      },
+      "priority": null,
+      "due_date": null,
+      "assignee": null
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Set up a sync with Mei at 8 PM on this evening to discuss hiring committee briefing.",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Mei",
+      "date": "this evening",
+      "time": "20:00",
+      "topic": "hiring committee briefing"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": [\"Mei\"],\n  \"date\": \"this_evening\",\n  \"time\": \"8 PM\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": [
+        "Mei"
+      ],
+      "date": "this_evening",
+      "time": "8 PM"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Task: fix memory leak in worker daemon. Urgent! [Seq #55]",
+    "ground_truth": {
+      "action": "manage_task",
+      "task": "fix memory leak in worker daemon",
+      "priority": "urgent",
+      "due_date": null,
+      "assignee": null
+    },
+    "raw_prediction": "{\n  \"action\": \"manage_task\",\n  \"task\": {\n    \"priority\": null,\n    \"due_date\": null,\n    \"assignee\": null,\n    \"description\": \"fix memory leak in worker daemon\"\n  },\n  \"name\": \"memory leak\",\n  \"role\": \"bug report\",\n  \"company\": null,\n  \"email\": null,\n  \"phone\": null\n}",
+    "parsed_prediction": {
+      "action": "manage_task",
+      "task": {
+        "priority": null,
+        "due_date": null,
+        "assignee": null,
+        "description": "fix memory leak in worker daemon"
+      },
+      "name": "memory leak",
+      "role": "bug report",
+      "company": null,
+      "email": null,
+      "phone": null
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Set up a sync with Dmitri at 6:30 PM on next Monday to discuss hiring committee briefing. [Seq #121]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Dmitri",
+      "date": "next Monday",
+      "time": "18:30",
+      "topic": "hiring committee briefing"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": [\"Dmitri\"],\n  \"date\": \"next Monday\",\n  \"time\": \"6:30 PM\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": [
+        "Dmitri"
+      ],
+      "date": "next Monday",
+      "time": "6:30 PM"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Assign task to Søren: document API endpoints with OpenAPI specs. Priority is low. [Seq #197]",
+    "ground_truth": {
+      "action": "manage_task",
+      "task": "document API endpoints with OpenAPI specs",
+      "priority": "low",
+      "due_date": null,
+      "assignee": "Søren"
+    },
+    "raw_prediction": "{\n  \"action\": \"assign_task\",\n  \"task\": {\n    \"name\": \"document API endpoints with OpenAPI specs\",\n    \"priority\": \"low\"\n  },\n  \"due_date\": \"\",\n  \"assignee\": \"Søren\"\n}",
+    "parsed_prediction": {
+      "action": "assign_task",
+      "task": {
+        "name": "document API endpoints with OpenAPI specs",
+        "priority": "low"
+      },
+      "due_date": "",
+      "assignee": "Søren"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Business card scanned: Mei, Senior ML Engineer at DeepMind. Tel: +1-555-404-4891. [Seq #128]",
+    "ground_truth": {
+      "action": "extract_contact",
+      "name": "Mei",
+      "role": "Senior ML Engineer",
+      "company": "DeepMind",
+      "email": null,
+      "phone": "+1-555-404-4891"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": {\n    \"name\": \"Mei\",\n    \"role\": \"Senior ML Engineer\",\n    \"company\": \"DeepMind\"\n  },\n  \"date\": \"2023-07-15T14:00:00Z\",\n  \"time\": \"14:00:00Z\",\n  \"topic\": \"Meet with Mei to discuss project updates.\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": {
+        "name": "Mei",
+        "role": "Senior ML Engineer",
+        "company": "DeepMind"
+      },
+      "date": "2023-07-15T14:00:00Z",
+      "time": "14:00:00Z",
+      "topic": "Meet with Mei to discuss project updates."
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Book a call with Carlos for AI sprint kickoff next weekend at 5 PM.",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Carlos",
+      "date": "next weekend",
+      "time": "17:00",
+      "topic": "AI sprint kickoff"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": \"Carlos\",\n  \"date\": \"next weekend\",\n  \"time\": \"5 PM\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": "Carlos",
+      "date": "next weekend",
+      "time": "5 PM"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Create a reminder for send invoice to Acme Corp. [Seq #47]",
+    "ground_truth": {
+      "action": "create_reminder",
+      "reminder": "send invoice to Acme Corp",
+      "date": null,
+      "time": null
+    },
+    "raw_prediction": "{\"action\": \"create_reminder\", \"reminder\": {\"date\": \"08/15/2023\", \"time\": \"14:00\", \"task\": \"send invoice to Acme Corp.\", \"priority\": 1, \"due_date\": \"08/19/2023\"}}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "08/15/2023",
+        "time": "14:00",
+        "task": "send invoice to Acme Corp.",
+        "priority": 1,
+        "due_date": "08/19/2023"
+      }
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Create a reminder for review the pull request #402. [Seq #167]",
+    "ground_truth": {
+      "action": "create_reminder",
+      "reminder": "review the pull request #402",
+      "date": null,
+      "time": null
+    },
+    "raw_prediction": "{\n  \"action\": \"create_reminder\",\n  \"reminder\": {\n    \"date\": \"[Seq #167]\",\n    \"time\": \"\",\n    \"topic\": \"\"\n  }\n}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "[Seq #167]",
+        "time": "",
+        "topic": ""
+      }
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Don't forget to submit the quarterly tax filings at 10:30 AM Dec 15th! [Seq #138]",
+    "ground_truth": {
+      "action": "create_reminder",
+      "reminder": "submit the quarterly tax filings",
+      "date": "Dec 15th",
+      "time": "10:30"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": [\"Seq #138\"],\n  \"date\": \"12/15/2023\",\n  \"time\": \"10:30 AM\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": [
+        "Seq #138"
+      ],
+      "date": "12/15/2023",
+      "time": "10:30 AM"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Assign task to O'Connor: benchmark quantized model latency on Apple M2. Priority is medium. [Seq #153]",
+    "ground_truth": {
+      "action": "manage_task",
+      "task": "benchmark quantized model latency on Apple M2",
+      "priority": "medium",
+      "due_date": null,
+      "assignee": "O'Connor"
+    },
+    "raw_prediction": "{\n  \"action\": \"manage_task\",\n  \"task\": {\n    \"name\": \"benchmark quantized model latency\",\n    \"priority\": \"medium\",\n    \"due_date\": \"[Seq #153]\"\n  }\n}",
+    "parsed_prediction": {
+      "action": "manage_task",
+      "task": {
+        "name": "benchmark quantized model latency",
+        "priority": "medium",
+        "due_date": "[Seq #153]"
+      }
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Set a reminder: update dependencies in requirements.txt on next Monday. [Seq #185]",
+    "ground_truth": {
+      "action": "create_reminder",
+      "reminder": "update dependencies in requirements.txt",
+      "date": "next Monday",
+      "time": null
+    },
+    "raw_prediction": "{\n  \"action\": \"create_reminder\",\n  \"reminder\": {\n    \"date\": \"next Monday\",\n    \"time\": \"09:00\"\n  },\n  \"task\": null,\n  \"priority\": null,\n  \"due_date\": null,\n  \"assignee\": null\n}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "next Monday",
+        "time": "09:00"
+      },
+      "task": null,
+      "priority": null,
+      "due_date": null,
+      "assignee": null
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Set a reminder: call the dentist for checkup on next Monday. [Seq #121]",
+    "ground_truth": {
+      "action": "create_reminder",
+      "reminder": "call the dentist for checkup",
+      "date": "next Monday",
+      "time": null
+    },
+    "raw_prediction": "{\n  \"action\": \"create_reminder\",\n  \"reminder\": {\n    \"date\": \"next Monday\",\n    \"time\": \"09:00 AM\"\n  }\n}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "next Monday",
+        "time": "09:00 AM"
+      }
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Set a reminder: water office plants on this evening. [Seq #141]",
+    "ground_truth": {
+      "action": "create_reminder",
+      "reminder": "water office plants",
+      "date": "this evening",
+      "time": null
+    },
+    "raw_prediction": "{\n  \"action\": \"create_reminder\",\n  \"reminder\": {\n    \"date\": \"this evening\",\n    \"time\": \"07:00\"\n  }\n}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "this evening",
+        "time": "07:00"
+      }
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Meeting with Mei at 8 PM next weekend. [Seq #264]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Mei",
+      "date": "next weekend",
+      "time": "20:00",
+      "topic": null
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": {\n    \"name\": \"Mei\"\n  },\n  \"date\": \"next weekend\",\n  \"time\": \"8 PM\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": {
+        "name": "Mei"
+      },
+      "date": "next weekend",
+      "time": "8 PM"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Add event 'All-Hands Meeting' on next Monday at 10:30 AM in Auditorium. [Seq #92]",
+    "ground_truth": {
+      "action": "calendar_event",
+      "event_title": "All-Hands Meeting",
+      "date": "next Monday",
+      "time": "10:30",
+      "location": "Auditorium"
+    },
+    "raw_prediction": "{\n  \"action\": \"create_reminder\",\n  \"reminder\": {\n    \"date\": \"next Monday\",\n    \"time\": \"10:30 AM\"\n  },\n  \"priority\": null,\n  \"due_date\": null,\n  \"assignee\": null\n}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "next Monday",
+        "time": "10:30 AM"
+      },
+      "priority": null,
+      "due_date": null,
+      "assignee": null
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Add task 'benchmark quantized model latency on Apple M2' with low priority due next Friday assigned to Sneha. [Seq #96]",
+    "ground_truth": {
+      "action": "manage_task",
+      "task": "benchmark quantized model latency on Apple M2",
+      "priority": "low",
+      "due_date": "next Friday",
+      "assignee": "Sneha"
+    },
+    "raw_prediction": "{\n  \"action\": \"add_task\",\n  \"task\": {\n    \"name\": \"benchmark quantized model latency on Apple M2\",\n    \"priority\": \"low\",\n    \"due_date\": \"next Friday\"\n  },\n  \"assignee\": \"Sneha\"\n}",
+    "parsed_prediction": {
+      "action": "add_task",
+      "task": {
+        "name": "benchmark quantized model latency on Apple M2",
+        "priority": "low",
+        "due_date": "next Friday"
+      },
+      "assignee": "Sneha"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Book a call with Mei for AI sprint kickoff the 4th of July at 8 PM. [Seq #72]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Mei",
+      "date": "the 4th of July",
+      "time": "20:00",
+      "topic": "AI sprint kickoff"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": [\"Mei\"],\n  \"date\": \"2023-07-04\",\n  \"time\": \"19:00\",\n  \"topic\": \"AI Sprint Kickoff\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": [
+        "Mei"
+      ],
+      "date": "2023-07-04",
+      "time": "19:00",
+      "topic": "AI Sprint Kickoff"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Task: document API endpoints with OpenAPI specs. Urgent! [Seq #79]",
+    "ground_truth": {
+      "action": "manage_task",
+      "task": "document API endpoints with OpenAPI specs",
+      "priority": "urgent",
+      "due_date": null,
+      "assignee": null
+    },
+    "raw_prediction": "{\n  \"action\": \"manage_task\",\n  \"task\": {\n    \"name\": \"document_api_endpoints_with_OpenAPI_specs\",\n    \"priority\": null,\n    \"due_date\": null,\n    \"assignee\": null\n  },\n  \"description\": \"This task requires creating a draft email to the specified recipient, subject, and tone.\"\n}",
+    "parsed_prediction": {
+      "action": "manage_task",
+      "task": {
+        "name": "document_api_endpoints_with_OpenAPI_specs",
+        "priority": null,
+        "due_date": null,
+        "assignee": null
+      },
+      "description": "This task requires creating a draft email to the specified recipient, subject, and tone."
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Put Product Launch Demo on calendar for this evening at Zoom. [Seq #95]",
+    "ground_truth": {
+      "action": "calendar_event",
+      "event_title": "Product Launch Demo",
+      "date": "this evening",
+      "time": null,
+      "location": "Zoom"
+    },
+    "raw_prediction": "{\n  \"action\": \"calendar_event\",\n  \"event_title\": \"Product Launch Demo\",\n  \"date\": \"2023-10-07T18:00:00Z\",\n  \"time\": \"18:00\",\n  \"location\": \"Zoom\"\n}",
+    "parsed_prediction": {
+      "action": "calendar_event",
+      "event_title": "Product Launch Demo",
+      "date": "2023-10-07T18:00:00Z",
+      "time": "18:00",
+      "location": "Zoom"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Book a call with Dr. Aris Thorne for frontend architecture refactor this evening at 10:30 AM. [Seq #182]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Dr. Aris Thorne",
+      "date": "this evening",
+      "time": "10:30",
+      "topic": "frontend architecture refactor"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": [\"Dr. Aris Thorne\"],\n  \"date\": \"evening\",\n  \"time\": \"10:30 AM\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": [
+        "Dr. Aris Thorne"
+      ],
+      "date": "evening",
+      "time": "10:30 AM"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Add contact: Kwame (Stripe) - Reach out via kwame@deepmind.google. [Seq #109]",
+    "ground_truth": {
+      "action": "extract_contact",
+      "name": "Kwame",
+      "role": null,
+      "company": "Stripe",
+      "email": "kwame@deepmind.google",
+      "phone": null
+    },
+    "raw_prediction": "{\n  \"action\": \"add_contact\",\n  \"name\": \"Kwame\",\n  \"role\": \"Reach out via\",\n  \"company\": \"\",\n  \"email\": \"kwame@deepmind.google\",\n  \"phone\": \"\"\n}",
+    "parsed_prediction": {
+      "action": "add_contact",
+      "name": "Kwame",
+      "role": "Reach out via",
+      "company": "",
+      "email": "kwame@deepmind.google",
+      "phone": ""
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Schedule a meeting with Priya tomorrow at 16:00 regarding marketing campaign retrospection. [Seq #75]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Priya",
+      "date": "tomorrow",
+      "time": "16:00",
+      "topic": "marketing campaign retrospection"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": {\n    \"name\": \"Priya\"\n  },\n  \"date\": \"tomorrow\",\n  \"time\": \"16:00\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": {
+        "name": "Priya"
+      },
+      "date": "tomorrow",
+      "time": "16:00"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Meeting with Fatima at noon 2026-12-01. [Seq #89]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Fatima",
+      "date": "2026-12-01",
+      "time": "12:00",
+      "topic": null
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": {\n    \"name\": \"Fatima\"\n  },\n  \"date\": \"2026-12-01\",\n  \"time\": \"noon\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": {
+        "name": "Fatima"
+      },
+      "date": "2026-12-01",
+      "time": "noon"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Can you put a meeting with Søren on my calendar 2026-12-01 at 11:45 AM?",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Søren",
+      "date": "2026-12-01",
+      "time": "11:45",
+      "topic": null
+    },
+    "raw_prediction": "{\"action\": \"schedule_meeting\", \"person\": \"Søren\", \"date\": \"2026-12-01\", \"time\": \"11:45 AM\"}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": "Søren",
+      "date": "2026-12-01",
+      "time": "11:45 AM"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Business card scanned: Tariq, VP of Product at Microsoft. Tel: +1-555-387-9827.",
+    "ground_truth": {
+      "action": "extract_contact",
+      "name": "Tariq",
+      "role": "VP of Product",
+      "company": "Microsoft",
+      "email": null,
+      "phone": "+1-555-387-9827"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": [\"Tariq\"],\n  \"date\": \"\",\n  \"time\": \"+1-555-387-9827\",\n  \"topic\": \"\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": [
+        "Tariq"
+      ],
+      "date": "",
+      "time": "+1-555-387-9827",
+      "topic": ""
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Email O'Connor about quarterly targets. [Variant #69]",
+    "ground_truth": {
+      "action": "draft_email",
+      "recipient": "O'Connor",
+      "subject": "quarterly targets",
+      "tone": "professional"
+    },
+    "raw_prediction": "{\n  \"action\": \"draft_email\",\n  \"recipient\": {\n    \"name\": \"O'Connor\",\n    \"role\": \"Manager\",\n    \"company\": \"XYZ Corporation\"\n  },\n  \"subject\": \"Quarterly Targets for O'Connor\",\n  \"tone\": \"informative\",\n  \"due_date\": \"2023-04-15T14:00:00Z\"\n}",
+    "parsed_prediction": {
+      "action": "draft_email",
+      "recipient": {
+        "name": "O'Connor",
+        "role": "Manager",
+        "company": "XYZ Corporation"
+      },
+      "subject": "Quarterly Targets for O'Connor",
+      "tone": "informative",
+      "due_date": "2023-04-15T14:00:00Z"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Don't forget to backup production Postgres databases at 5 PM tomorrow! [Seq #194]",
+    "ground_truth": {
+      "action": "create_reminder",
+      "reminder": "backup production Postgres databases",
+      "date": "tomorrow",
+      "time": "17:00"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"date\": \"tomorrow\",\n  \"time\": \"17:00\",\n  \"topic\": \"backup production Postgres databases\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "date": "tomorrow",
+      "time": "17:00",
+      "topic": "backup production Postgres databases"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Meeting with Carlos at 2 PM next Monday.",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Carlos",
+      "date": "next Monday",
+      "time": "14:00",
+      "topic": null
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": {\n    \"name\": \"Carlos\"\n  },\n  \"date\": \"next Monday\",\n  \"time\": \"14:00\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": {
+        "name": "Carlos"
+      },
+      "date": "next Monday",
+      "time": "14:00"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Save contact: Tariq, working as VP of Product at Acme Corp. Email is tariq@deepmind.google and phone is +1-555-815-8167. [Seq #54]",
+    "ground_truth": {
+      "action": "extract_contact",
+      "name": "Tariq",
+      "role": "VP of Product",
+      "company": "Acme Corp",
+      "email": "tariq@deepmind.google",
+      "phone": "+1-555-815-8167"
+    },
+    "raw_prediction": "{\n  \"action\": \"extract_contact\",\n  \"name\": \"Tariq\",\n  \"role\": \"VP of Product\",\n  \"company\": \"Acme Corp.\",\n  \"email\": \"tariq@deepmind.google\",\n  \"phone\": \"+1-555-815-8167\"\n}",
+    "parsed_prediction": {
+      "action": "extract_contact",
+      "name": "Tariq",
+      "role": "VP of Product",
+      "company": "Acme Corp.",
+      "email": "tariq@deepmind.google",
+      "phone": "+1-555-815-8167"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Put Hackathon Day 1 on calendar for this evening at Auditorium. [Seq #41]",
+    "ground_truth": {
+      "action": "calendar_event",
+      "event_title": "Hackathon Day 1",
+      "date": "this evening",
+      "time": null,
+      "location": "Auditorium"
+    },
+    "raw_prediction": "{\n  \"action\": \"calendar_event\",\n  \"event_title\": \"Hackathon Day 1\",\n  \"date\": \"evening\",\n  \"time\": \"Auditorium\",\n  \"location\": \"\"\n}",
+    "parsed_prediction": {
+      "action": "calendar_event",
+      "event_title": "Hackathon Day 1",
+      "date": "evening",
+      "time": "Auditorium",
+      "location": ""
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Write a follow-up email to Nguyễn about AI sprint kickoff. [Seq #52]",
+    "ground_truth": {
+      "action": "draft_email",
+      "recipient": "Nguyễn",
+      "subject": "AI sprint kickoff",
+      "tone": "follow-up"
+    },
+    "raw_prediction": "{\n  \"action\": \"draft_email\",\n  \"recipient\": {\n    \"name\": \"Nguyễn\",\n    \"role\": \"Project Manager\",\n    \"company\": \"AI Company Inc.\",\n    \"email\": \"nguyen@example.com\"\n  },\n  \"subject\": \"Follow-Up: AI Sprint Kickoff\",\n  \"tone\": \"informative\",\n  \"date\": \"2023-09-15T14:00:00Z\",\n  \"time\": \"14:00:00\"\n}",
+    "parsed_prediction": {
+      "action": "draft_email",
+      "recipient": {
+        "name": "Nguyễn",
+        "role": "Project Manager",
+        "company": "AI Company Inc.",
+        "email": "nguyen@example.com"
+      },
+      "subject": "Follow-Up: AI Sprint Kickoff",
+      "tone": "informative",
+      "date": "2023-09-15T14:00:00Z",
+      "time": "14:00:00"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Add task for Nguyễn: calibrate sensor array.",
+    "ground_truth": {
+      "action": "manage_task",
+      "task": "calibrate sensor array",
+      "priority": "medium",
+      "due_date": null,
+      "assignee": "Nguyễn"
+    },
+    "raw_prediction": "{\n  \"action\": \"manage_task\",\n  \"task\": {\n    \"name\": \"Calibrate Sensor Array\",\n    \"priority\": null,\n    \"due_date\": null,\n    \"assignee\": null\n  }\n}",
+    "parsed_prediction": {
+      "action": "manage_task",
+      "task": {
+        "name": "Calibrate Sensor Array",
+        "priority": null,
+        "due_date": null,
+        "assignee": null
+      }
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Add contact: Priya (Microsoft) - Reach out via priya@example.com. [Seq #130]",
+    "ground_truth": {
+      "action": "extract_contact",
+      "name": "Priya",
+      "role": null,
+      "company": "Microsoft",
+      "email": "priya@example.com",
+      "phone": null
+    },
+    "raw_prediction": "{\n  \"action\": \"add_contact\",\n  \"name\": \"Priya\",\n  \"role\": \"Microsoft\",\n  \"company\": null,\n  \"email\": \"priya@example.com\",\n  \"phone\": null\n}",
+    "parsed_prediction": {
+      "action": "add_contact",
+      "name": "Priya",
+      "role": "Microsoft",
+      "company": null,
+      "email": "priya@example.com",
+      "phone": null
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Put Product Launch Demo on calendar for next Monday at Room A. [Seq #33]",
+    "ground_truth": {
+      "action": "calendar_event",
+      "event_title": "Product Launch Demo",
+      "date": "next Monday",
+      "time": null,
+      "location": "Room A"
+    },
+    "raw_prediction": "{\n  \"action\": \"calendar_event\",\n  \"event_title\": \"Product Launch Demo\",\n  \"date\": \"next Monday\",\n  \"time\": \"09:00 AM\",\n  \"location\": \"Room A\"\n}",
+    "parsed_prediction": {
+      "action": "calendar_event",
+      "event_title": "Product Launch Demo",
+      "date": "next Monday",
+      "time": "09:00 AM",
+      "location": "Room A"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Put Hackathon Day 1 on calendar for next Monday at Room A. [Seq #49]",
+    "ground_truth": {
+      "action": "calendar_event",
+      "event_title": "Hackathon Day 1",
+      "date": "next Monday",
+      "time": null,
+      "location": "Room A"
+    },
+    "raw_prediction": "{\n  \"action\": \"calendar_event\",\n  \"event_title\": \"Hackathon Day 1\",\n  \"date\": \"next Monday\",\n  \"time\": \"Room A\",\n  \"location\": \"\"\n}",
+    "parsed_prediction": {
+      "action": "calendar_event",
+      "event_title": "Hackathon Day 1",
+      "date": "next Monday",
+      "time": "Room A",
+      "location": ""
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Send a quick note to Ananya checking in on hiring committee briefing. [Seq #47]",
+    "ground_truth": {
+      "action": "draft_email",
+      "recipient": "Ananya",
+      "subject": "Follow-up: hiring committee briefing",
+      "tone": "casual"
+    },
+    "raw_prediction": "{\n  \"action\": \"send_note\",\n  \"to\": {\n    \"name\": \"Ananya\",\n    \"role\": \"Hiring Committee Member\"\n  },\n  \"content\": \"Hi Ananya, I wanted to check in on the hiring committee briefing. Any updates?\"\n}",
+    "parsed_prediction": {
+      "action": "send_note",
+      "to": {
+        "name": "Ananya",
+        "role": "Hiring Committee Member"
+      },
+      "content": "Hi Ananya, I wanted to check in on the hiring committee briefing. Any updates?"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Write a follow-up email to Elena about Q3 roadmap review.",
+    "ground_truth": {
+      "action": "draft_email",
+      "recipient": "Elena",
+      "subject": "Q3 roadmap review",
+      "tone": "follow-up"
+    },
+    "raw_prediction": "{\n  \"action\": \"draft_email\",\n  \"recipient\": {\n    \"name\": \"Elena\",\n    \"role\": \"Project Manager\",\n    \"company\": \"XYZ Corporation\"\n  },\n  \"subject\": \"Q3 Roadmap Review Follow-Up\",\n  \"tone\": \"informative\",\n  \"due_date\": \"2023-09-15T14:00:00Z\",\n  \"assignee\": \"Elena\"\n}",
+    "parsed_prediction": {
+      "action": "draft_email",
+      "recipient": {
+        "name": "Elena",
+        "role": "Project Manager",
+        "company": "XYZ Corporation"
+      },
+      "subject": "Q3 Roadmap Review Follow-Up",
+      "tone": "informative",
+      "due_date": "2023-09-15T14:00:00Z",
+      "assignee": "Elena"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Catch up with Dr. Aris Thorne sometime soon. [Variant #10]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Dr. Aris Thorne",
+      "date": null,
+      "time": null,
+      "topic": null
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": \"Dr. Aris Thorne\",\n  \"date\": \"next_saturday\",\n  \"time\": \"10:00 AM\",\n  \"topic\": \"recent research\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": "Dr. Aris Thorne",
+      "date": "next_saturday",
+      "time": "10:00 AM",
+      "topic": "recent research"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Meeting tomorrow. [Variant #11]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": null,
+      "date": "tomorrow",
+      "time": null,
+      "topic": null
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"date\": \"tomorrow\",\n  \"time\": \"\",\n  \"topic\": \"\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "date": "tomorrow",
+      "time": "",
+      "topic": ""
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Set up a sync with Björn at 6:30 PM on the 4th of July to discuss hiring committee briefing. [Seq #106]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Björn",
+      "date": "the 4th of July",
+      "time": "18:30",
+      "topic": "hiring committee briefing"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": [\"Björn\"],\n  \"date\": \"2023-07-04\",\n  \"time\": \"18:30\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": [
+        "Björn"
+      ],
+      "date": "2023-07-04",
+      "time": "18:30"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Don't forget to backup production Postgres databases at noon next Monday! [Seq #158]",
+    "ground_truth": {
+      "action": "create_reminder",
+      "reminder": "backup production Postgres databases",
+      "date": "next Monday",
+      "time": "12:00"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"date\": \"next Monday, noon\",\n  \"time\": \"12:00 PM\",\n  \"topic\": \"backup production Postgres databases\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "date": "next Monday, noon",
+      "time": "12:00 PM",
+      "topic": "backup production Postgres databases"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Add contact: Elena (Microsoft) - Reach out via elena@techcorp.io. [Seq #112]",
+    "ground_truth": {
+      "action": "extract_contact",
+      "name": "Elena",
+      "role": null,
+      "company": "Microsoft",
+      "email": "elena@techcorp.io",
+      "phone": null
+    },
+    "raw_prediction": "{\n  \"action\": \"add_contact\",\n  \"name\": \"Elena\",\n  \"role\": \"Microsoft\",\n  \"company\": null,\n  \"email\": \"elena@techcorp.io\",\n  \"phone\": null\n}",
+    "parsed_prediction": {
+      "action": "add_contact",
+      "name": "Elena",
+      "role": "Microsoft",
+      "company": null,
+      "email": "elena@techcorp.io",
+      "phone": null
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Business card scanned: Neha, Staff Research Scientist at Stripe. Tel: +1-555-948-5055.",
+    "ground_truth": {
+      "action": "extract_contact",
+      "name": "Neha",
+      "role": "Staff Research Scientist",
+      "company": "Stripe",
+      "email": null,
+      "phone": "+1-555-948-5055"
+    },
+    "raw_prediction": "{\n  \"action\": \"extract_contact\",\n  \"name\": \"Neha\",\n  \"role\": \"Staff Research Scientist\",\n  \"company\": \"Stripe\",\n  \"email\": \"+1-555-948-5055\"\n}",
+    "parsed_prediction": {
+      "action": "extract_contact",
+      "name": "Neha",
+      "role": "Staff Research Scientist",
+      "company": "Stripe",
+      "email": "+1-555-948-5055"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Business card scanned: Carlos, Chief Architect at Anthropic. Tel: +1-555-161-7520. [Seq #50]",
+    "ground_truth": {
+      "action": "extract_contact",
+      "name": "Carlos",
+      "role": "Chief Architect",
+      "company": "Anthropic",
+      "email": null,
+      "phone": "+1-555-161-7520"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": {\n    \"name\": \"Carlos\",\n    \"role\": \"Chief Architect\",\n    \"company\": \"Anthropic\"\n  },\n  \"date\": \"2023-09-15T14:00:00Z\",\n  \"time\": \"14:00:00Z\",\n  \"topic\": \"Meet with the CEO to discuss project updates.\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": {
+        "name": "Carlos",
+        "role": "Chief Architect",
+        "company": "Anthropic"
+      },
+      "date": "2023-09-15T14:00:00Z",
+      "time": "14:00:00Z",
+      "topic": "Meet with the CEO to discuss project updates."
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Add task 'optimize PostgreSQL indexing for users table' with low priority due next Monday assigned to Liam. [Seq #152]",
+    "ground_truth": {
+      "action": "manage_task",
+      "task": "optimize PostgreSQL indexing for users table",
+      "priority": "low",
+      "due_date": "next Monday",
+      "assignee": "Liam"
+    },
+    "raw_prediction": "{\n  \"action\": \"add_task\",\n  \"task\": {\n    \"name\": \"optimize PostgreSQL indexing for users table\",\n    \"priority\": \"low\",\n    \"due_date\": \"next Monday\"\n  },\n  \"assignee\": \"Liam\"\n}",
+    "parsed_prediction": {
+      "action": "add_task",
+      "task": {
+        "name": "optimize PostgreSQL indexing for users table",
+        "priority": "low",
+        "due_date": "next Monday"
+      },
+      "assignee": "Liam"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Create a new task: prepare slide deck for executive committee due the 4th of July. [Seq #194]",
+    "ground_truth": {
+      "action": "manage_task",
+      "task": "prepare slide deck for executive committee",
+      "priority": "medium",
+      "due_date": "the 4th of July",
+      "assignee": null
+    },
+    "raw_prediction": "{\n  \"action\": \"create_task\",\n  \"task\": {\n    \"priority\": null,\n    \"due_date\": \"2023-07-04\",\n    \"assignee\": null,\n    \"description\": \"Prepare slide deck for executive committee\"\n  }\n}",
+    "parsed_prediction": {
+      "action": "create_task",
+      "task": {
+        "priority": null,
+        "due_date": "2023-07-04",
+        "assignee": null,
+        "description": "Prepare slide deck for executive committee"
+      }
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Schedule a meeting with Dr. Aris Thorne next Friday at 8 PM regarding budget allocation sync. [Seq #215]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Dr. Aris Thorne",
+      "date": "next Friday",
+      "time": "20:00",
+      "topic": "budget allocation sync"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": null,\n  \"date\": \"2023-05-17T19:00:00Z\",\n  \"time\": \"19:00\",\n  \"topic\": \"Budget Allocation Sync\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": null,
+      "date": "2023-05-17T19:00:00Z",
+      "time": "19:00",
+      "topic": "Budget Allocation Sync"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Book a call with Jean-Luc for budget allocation sync the 4th of July at 9 AM. [Seq #67]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Jean-Luc",
+      "date": "the 4th of July",
+      "time": "09:00",
+      "topic": "budget allocation sync"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": [\"Jean-Luc\"],\n  \"date\": \"04/07/2023\",\n  \"time\": \"09:00 AM\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": [
+        "Jean-Luc"
+      ],
+      "date": "04/07/2023",
+      "time": "09:00 AM"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Assign task to Neha: implement OAuth2 authentication flow. Priority is high. [Seq #149]",
+    "ground_truth": {
+      "action": "manage_task",
+      "task": "implement OAuth2 authentication flow",
+      "priority": "high",
+      "due_date": null,
+      "assignee": "Neha"
+    },
+    "raw_prediction": "{\n  \"action\": \"assign_task\",\n  \"task\": {\n    \"name\": \"OAuth2 authentication flow implementation\",\n    \"priority\": \"high\",\n    \"due_date\": \"[Seq #149]\"\n  }\n}",
+    "parsed_prediction": {
+      "action": "assign_task",
+      "task": {
+        "name": "OAuth2 authentication flow implementation",
+        "priority": "high",
+        "due_date": "[Seq #149]"
+      }
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Book a call with Carlos for client onboarding kickoff tomorrow at noon.",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Carlos",
+      "date": "tomorrow",
+      "time": "12:00",
+      "topic": "client onboarding kickoff"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": \"Carlos\",\n  \"date\": \"tomorrow\",\n  \"time\": \"noon\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": "Carlos",
+      "date": "tomorrow",
+      "time": "noon"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Create a new task: write unit tests for checkout service due the 4th of July. [Seq #54]",
+    "ground_truth": {
+      "action": "manage_task",
+      "task": "write unit tests for checkout service",
+      "priority": "medium",
+      "due_date": "the 4th of July",
+      "assignee": null
+    },
+    "raw_prediction": "{\n  \"action\": \"create_reminder\",\n  \"reminder\": {\n    \"date\": \"2023-07-04\",\n    \"time\": \"10:00 AM\"\n  },\n  \"task\": {\n    \"priority\": null,\n    \"due_date\": \"2023-07-04\",\n    \"assignee\": null\n  }\n}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "2023-07-04",
+        "time": "10:00 AM"
+      },
+      "task": {
+        "priority": null,
+        "due_date": "2023-07-04",
+        "assignee": null
+      }
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Create a new task: fix memory leak in worker daemon due 2026-12-01. [Seq #58]",
+    "ground_truth": {
+      "action": "manage_task",
+      "task": "fix memory leak in worker daemon",
+      "priority": "medium",
+      "due_date": "2026-12-01",
+      "assignee": null
+    },
+    "raw_prediction": "{\n  \"action\": \"create_reminder\",\n  \"reminder\": {\n    \"date\": \"2026-12-01\",\n    \"time\": \"09:00\"\n  },\n  \"task\": {\n    \"priority\": null,\n    \"due_date\": \"2026-12-01\",\n    \"assignee\": null\n  }\n}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "2026-12-01",
+        "time": "09:00"
+      },
+      "task": {
+        "priority": null,
+        "due_date": "2026-12-01",
+        "assignee": null
+      }
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Write a standard email to Xavier about hiring committee briefing. [Seq #79]",
+    "ground_truth": {
+      "action": "draft_email",
+      "recipient": "Xavier",
+      "subject": "hiring committee briefing",
+      "tone": "standard"
+    },
+    "raw_prediction": "{\n  \"action\": \"draft_email\",\n  \"recipient\": {\n    \"name\": \"Xavier\",\n    \"role\": \"Hiring Committee Member\"\n  },\n  \"subject\": \"Hiring Committee Briefing\",\n  \"tone\": \"informative\",\n  \"due_date\": \"\",\n  \"assignee\": null,\n  \"event_title\": \"Hiring Committee Meeting\",\n  \"date\": \"2023-04-15T14:00:00Z\",\n  \"location\": \"Virtual Conference Room\"\n}",
+    "parsed_prediction": {
+      "action": "draft_email",
+      "recipient": {
+        "name": "Xavier",
+        "role": "Hiring Committee Member"
+      },
+      "subject": "Hiring Committee Briefing",
+      "tone": "informative",
+      "due_date": "",
+      "assignee": null,
+      "event_title": "Hiring Committee Meeting",
+      "date": "2023-04-15T14:00:00Z",
+      "location": "Virtual Conference Room"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Set up a sync with Carlos at 8 PM on next Monday to discuss Q3 roadmap review. [Seq #171]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Carlos",
+      "date": "next Monday",
+      "time": "20:00",
+      "topic": "Q3 roadmap review"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": [\"Carlos\"],\n  \"date\": \"next Monday\",\n  \"time\": \"08:00 PM\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": [
+        "Carlos"
+      ],
+      "date": "next Monday",
+      "time": "08:00 PM"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Can you put a meeting with Rahul on my calendar Dec 15th at noon? [Seq #98]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Rahul",
+      "date": "Dec 15th",
+      "time": "12:00",
+      "topic": null
+    },
+    "raw_prediction": "{\"action\": \"schedule_meeting\", \"person\": \"Rahul\", \"date\": \"15-12-2023\", \"time\": \"12:00 PM\"}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": "Rahul",
+      "date": "15-12-2023",
+      "time": "12:00 PM"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Meeting with O'Connor at 8 PM 2026-12-01. [Seq #84]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "O'Connor",
+      "date": "2026-12-01",
+      "time": "20:00",
+      "topic": null
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": {\n    \"name\": \"O'Connor\"\n  },\n  \"date\": \"2026-12-01\",\n  \"time\": \"19:00\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": {
+        "name": "O'Connor"
+      },
+      "date": "2026-12-01",
+      "time": "19:00"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Email O'Connor about quarterly targets.",
+    "ground_truth": {
+      "action": "draft_email",
+      "recipient": "O'Connor",
+      "subject": "quarterly targets",
+      "tone": "professional"
+    },
+    "raw_prediction": "{\n  \"action\": \"draft_email\",\n  \"recipient\": {\n    \"name\": \"O'Connor\",\n    \"role\": \"Manager\",\n    \"company\": \"XYZ Corporation\"\n  },\n  \"subject\": \"Quarterly Targets for O'Connor\",\n  \"tone\": \"informative\"\n}",
+    "parsed_prediction": {
+      "action": "draft_email",
+      "recipient": {
+        "name": "O'Connor",
+        "role": "Manager",
+        "company": "XYZ Corporation"
+      },
+      "subject": "Quarterly Targets for O'Connor",
+      "tone": "informative"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Send a quick note to O'Connor checking in on marketing campaign retrospection. [Seq #143]",
+    "ground_truth": {
+      "action": "draft_email",
+      "recipient": "O'Connor",
+      "subject": "Follow-up: marketing campaign retrospection",
+      "tone": "casual"
+    },
+    "raw_prediction": "{\n  \"action\": \"send_note\",\n  \"to\": {\n    \"name\": \"O'Connor\",\n    \"role\": \"Marketing Campaign Retrospective\"\n  },\n  \"content\": \"Hi O'Connor, I wanted to check in on the marketing campaign retrospection.\"\n}",
+    "parsed_prediction": {
+      "action": "send_note",
+      "to": {
+        "name": "O'Connor",
+        "role": "Marketing Campaign Retrospective"
+      },
+      "content": "Hi O'Connor, I wanted to check in on the marketing campaign retrospection."
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Book a call with Carlos for investor pitch rehearsal coming Tuesday at 3:15 PM. [Seq #197]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Carlos",
+      "date": "coming Tuesday",
+      "time": "15:15",
+      "topic": "investor pitch rehearsal"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": [\"Carlos\"],\n  \"date\": \"Tuesday\",\n  \"time\": \"3:15 PM\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": [
+        "Carlos"
+      ],
+      "date": "Tuesday",
+      "time": "3:15 PM"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Task: prepare slide deck for executive committee. Urgent! [Seq #175]",
+    "ground_truth": {
+      "action": "manage_task",
+      "task": "prepare slide deck for executive committee",
+      "priority": "urgent",
+      "due_date": null,
+      "assignee": null
+    },
+    "raw_prediction": "{\n  \"action\": \"manage_task\",\n  \"task\": {\n    \"priority\": null,\n    \"due_date\": null,\n    \"assignee\": null,\n    \"description\": \"prepare slide deck for executive committee. urgent!\"\n  }\n}",
+    "parsed_prediction": {
+      "action": "manage_task",
+      "task": {
+        "priority": null,
+        "due_date": null,
+        "assignee": null,
+        "description": "prepare slide deck for executive committee. urgent!"
+      }
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Remind me to review the pull request #402 Jan 10, 2027 at 8 PM.",
+    "ground_truth": {
+      "action": "create_reminder",
+      "reminder": "review the pull request #402",
+      "date": "Jan 10, 2027",
+      "time": "20:00"
+    },
+    "raw_prediction": "{\n  \"action\": \"create_reminder\",\n  \"reminder\": {\n    \"date\": \"2027-01-10T20:00:00Z\",\n    \"time\": \"19:00\"\n  },\n  \"topic\": \"review pull request #402\"\n}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "2027-01-10T20:00:00Z",
+        "time": "19:00"
+      },
+      "topic": "review pull request #402"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Meeting with Neha at 2 PM tomorrow.",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Neha",
+      "date": "tomorrow",
+      "time": "14:00",
+      "topic": null
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": {\n    \"name\": \"Neha\"\n  },\n  \"date\": \"tomorrow\",\n  \"time\": \"14:00\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": {
+        "name": "Neha"
+      },
+      "date": "tomorrow",
+      "time": "14:00"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Create a new task: optimize PostgreSQL indexing for users table due Dec 15th.",
+    "ground_truth": {
+      "action": "manage_task",
+      "task": "optimize PostgreSQL indexing for users table",
+      "priority": "medium",
+      "due_date": "Dec 15th",
+      "assignee": null
+    },
+    "raw_prediction": "{\n  \"action\": \"create_task\",\n  \"task\": {\n    \"priority\": \"high\",\n    \"due_date\": \"2023-12-15\"\n  },\n  \"assignee\": null,\n  \"description\": \"Optimize PostgreSQL indexing for users table\"\n}",
+    "parsed_prediction": {
+      "action": "create_task",
+      "task": {
+        "priority": "high",
+        "due_date": "2023-12-15"
+      },
+      "assignee": null,
+      "description": "Optimize PostgreSQL indexing for users table"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Catch up with Dr. Aris Thorne sometime soon. [Variant #20]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Dr. Aris Thorne",
+      "date": null,
+      "time": null,
+      "topic": null
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": [\"Dr. Aris Thorne\"],\n  \"date\": null,\n  \"time\": null,\n  \"topic\": \"\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": [
+        "Dr. Aris Thorne"
+      ],
+      "date": null,
+      "time": null,
+      "topic": ""
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Add event 'Product Launch Demo' on tomorrow at 6:30 PM in Auditorium. [Seq #76]",
+    "ground_truth": {
+      "action": "calendar_event",
+      "event_title": "Product Launch Demo",
+      "date": "tomorrow",
+      "time": "18:30",
+      "location": "Auditorium"
+    },
+    "raw_prediction": "{\n  \"action\": \"create_reminder\",\n  \"reminder\": {\n    \"date\": \"tomorrow\",\n    \"time\": \"6:30 PM\"\n  },\n  \"priority\": null,\n  \"due_date\": null,\n  \"assignee\": null\n}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "tomorrow",
+        "time": "6:30 PM"
+      },
+      "priority": null,
+      "due_date": null,
+      "assignee": null
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Send a quick note to Rahul checking in on budget allocation sync. [Seq #110]",
+    "ground_truth": {
+      "action": "draft_email",
+      "recipient": "Rahul",
+      "subject": "Follow-up: budget allocation sync",
+      "tone": "casual"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": \"Rahul\",\n  \"date\": \"[Seq #110]\",\n  \"time\": \"14:00\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": "Rahul",
+      "date": "[Seq #110]",
+      "time": "14:00"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Add contact: Jean-Luc (Google) - Reach out via jeanluc@deepmind.google. [Seq #73]",
+    "ground_truth": {
+      "action": "extract_contact",
+      "name": "Jean-Luc",
+      "role": null,
+      "company": "Google",
+      "email": "jeanluc@deepmind.google",
+      "phone": null
+    },
+    "raw_prediction": "{\n  \"action\": \"add_contact\",\n  \"name\": \"Jean-Luc\",\n  \"role\": \"Google\",\n  \"company\": null,\n  \"email\": null,\n  \"phone\": null,\n  \"event_title\": null,\n  \"date\": \"null\",\n  \"time\": \"null\",\n  \"location\": null\n}",
+    "parsed_prediction": {
+      "action": "add_contact",
+      "name": "Jean-Luc",
+      "role": "Google",
+      "company": null,
+      "email": null,
+      "phone": null,
+      "event_title": null,
+      "date": "null",
+      "time": "null",
+      "location": null
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Create a reminder for check server disk usage. [Seq #107]",
+    "ground_truth": {
+      "action": "create_reminder",
+      "reminder": "check server disk usage",
+      "date": null,
+      "time": null
+    },
+    "raw_prediction": "{\"action\": \"create_reminder\", \"reminder\": {\"date\": \"2023-10-08T14:00:00Z\", \"time\": \"14:00\", \"task\": \"check server disk usage\"}}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "2023-10-08T14:00:00Z",
+        "time": "14:00",
+        "task": "check server disk usage"
+      }
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Quick sync with Jean-Luc next Friday around noon to review bug #1042. [Variant #55]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Jean-Luc",
+      "date": "next Friday",
+      "time": "12:00",
+      "topic": "review bug #1042"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": [\"Jean-Luc\"],\n  \"date\": \"2023-05-15T12:00:00Z\",\n  \"time\": \"12:00:00Z\",\n  \"topic\": \"[Variant #55]\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": [
+        "Jean-Luc"
+      ],
+      "date": "2023-05-15T12:00:00Z",
+      "time": "12:00:00Z",
+      "topic": "[Variant #55]"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Draft an email to Neha regarding investor pitch rehearsal. [Seq #129]",
+    "ground_truth": {
+      "action": "draft_email",
+      "recipient": "Neha",
+      "subject": "investor pitch rehearsal",
+      "tone": "professional"
+    },
+    "raw_prediction": "{\n  \"action\": \"draft_email\",\n  \"recipient\": {\n    \"name\": \"Neha\",\n    \"role\": \"Investor\",\n    \"company\": \"XYZ Corporation\"\n  },\n  \"subject\": \"Investor Pitch Rehearsal - [Seq #129]\",\n  \"tone\": \"informative\",\n  \"date\": \"2023-08-15T14:00:00Z\",\n  \"time\": \"14:00:00Z\"\n}",
+    "parsed_prediction": {
+      "action": "draft_email",
+      "recipient": {
+        "name": "Neha",
+        "role": "Investor",
+        "company": "XYZ Corporation"
+      },
+      "subject": "Investor Pitch Rehearsal - [Seq #129]",
+      "tone": "informative",
+      "date": "2023-08-15T14:00:00Z",
+      "time": "14:00:00Z"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Add task 'refactor monolithic parser into modular microservice' with low priority due Dec 15th assigned to Zoe.",
+    "ground_truth": {
+      "action": "manage_task",
+      "task": "refactor monolithic parser into modular microservice",
+      "priority": "low",
+      "due_date": "Dec 15th",
+      "assignee": "Zoe"
+    },
+    "raw_prediction": "{\n  \"action\": \"create_reminder\",\n  \"reminder\": {\n    \"reminder_type\": \"low_priority\",\n    \"due_date\": \"2023-12-15\"\n  },\n  \"task\": {\n    \"name\": \"Refactor Monolithic Parser into Modular Microservice\",\n    \"priority\": \"moderate\",\n    \"assignee\": \"Zoe\"\n  }\n}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "reminder_type": "low_priority",
+        "due_date": "2023-12-15"
+      },
+      "task": {
+        "name": "Refactor Monolithic Parser into Modular Microservice",
+        "priority": "moderate",
+        "assignee": "Zoe"
+      }
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Call Björn back tomorrow morning at 9 AM. [Variant #57]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Björn",
+      "date": "tomorrow",
+      "time": "09:00",
+      "topic": "call back"
+    },
+    "raw_prediction": "{\n    \"action\": \"schedule_meeting\",\n    \"person\": [\"Björn\"],\n    \"date\": \"tomorrow morning\",\n    \"time\": \"9 AM\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": [
+        "Björn"
+      ],
+      "date": "tomorrow morning",
+      "time": "9 AM"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Set a reminder: submit the quarterly tax filings on 2026-12-01.",
+    "ground_truth": {
+      "action": "create_reminder",
+      "reminder": "submit the quarterly tax filings",
+      "date": "2026-12-01",
+      "time": null
+    },
+    "raw_prediction": "{\n  \"action\": \"create_reminder\",\n  \"reminder\": {\n    \"date\": \"2026-12-01\",\n    \"time\": \"00:00\"\n  },\n  \"topic\": \"quarterly tax filings\"\n}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "2026-12-01",
+        "time": "00:00"
+      },
+      "topic": "quarterly tax filings"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Send a quick note to O'Connor checking in on frontend architecture refactor.",
+    "ground_truth": {
+      "action": "draft_email",
+      "recipient": "O'Connor",
+      "subject": "Follow-up: frontend architecture refactor",
+      "tone": "casual"
+    },
+    "raw_prediction": "{\n  \"action\": \"send_note\",\n  \"to\": \"O'Connor\",\n  \"content\": \"Check in on frontend architecture refactor\"\n}",
+    "parsed_prediction": {
+      "action": "send_note",
+      "to": "O'Connor",
+      "content": "Check in on frontend architecture refactor"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Assign task to O'Connor: fix memory leak in worker daemon. Priority is urgent. [Seq #61]",
+    "ground_truth": {
+      "action": "manage_task",
+      "task": "fix memory leak in worker daemon",
+      "priority": "urgent",
+      "due_date": null,
+      "assignee": "O'Connor"
+    },
+    "raw_prediction": "{\n  \"action\": \"manage_task\",\n  \"task\": {\n    \"name\": \"fix memory leak in worker daemon\",\n    \"priority\": \"urgent\"\n  },\n  \"due_date\": \"[Seq #61]\",\n  \"assignee\": \"O'Connor\"\n}",
+    "parsed_prediction": {
+      "action": "manage_task",
+      "task": {
+        "name": "fix memory leak in worker daemon",
+        "priority": "urgent"
+      },
+      "due_date": "[Seq #61]",
+      "assignee": "O'Connor"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Sync at 17:00. [Variant #52]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": null,
+      "date": null,
+      "time": "17:00",
+      "topic": null
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"date\": \"2023-09-18T17:00:00Z\",\n  \"time\": \"17:00\",\n  \"topic\": \"[Variant #52]\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "date": "2023-09-18T17:00:00Z",
+      "time": "17:00",
+      "topic": "[Variant #52]"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Create a reminder for update dependencies in requirements.txt. [Seq #119]",
+    "ground_truth": {
+      "action": "create_reminder",
+      "reminder": "update dependencies in requirements.txt",
+      "date": null,
+      "time": null
+    },
+    "raw_prediction": "{\"action\": \"create_reminder\", \"reminder\": {\"date\": \"null\", \"time\": \"null\", \"task\": \"update dependencies in requirements.txt\", \"priority\": null, \"due_date\": null, \"assignee\": null}}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "null",
+        "time": "null",
+        "task": "update dependencies in requirements.txt",
+        "priority": null,
+        "due_date": null,
+        "assignee": null
+      }
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Set up a sync with Jean-Luc at 6:30 PM on the 4th of July to discuss investor pitch rehearsal. [Seq #116]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Jean-Luc",
+      "date": "the 4th of July",
+      "time": "18:30",
+      "topic": "investor pitch rehearsal"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": {\n    \"name\": \"Jean-Luc\",\n    \"role\": \"speaker\"\n  },\n  \"date\": \"2023-07-04\",\n  \"time\": \"18:30:00\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": {
+        "name": "Jean-Luc",
+        "role": "speaker"
+      },
+      "date": "2023-07-04",
+      "time": "18:30:00"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Call Björn back tomorrow morning at 9 AM. [Variant #47]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Björn",
+      "date": "tomorrow",
+      "time": "09:00",
+      "topic": "call back"
+    },
+    "raw_prediction": "{\n    \"action\": \"schedule_meeting\",\n    \"person\": \"Björn\",\n    \"date\": \"tomorrow morning\",\n    \"time\": \"9 AM\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": "Björn",
+      "date": "tomorrow morning",
+      "time": "9 AM"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Business card scanned: Zoe, Staff Research Scientist at Microsoft. Tel: +1-555-326-2705. [Seq #116]",
+    "ground_truth": {
+      "action": "extract_contact",
+      "name": "Zoe",
+      "role": "Staff Research Scientist",
+      "company": "Microsoft",
+      "email": null,
+      "phone": "+1-555-326-2705"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": [\"Zoe\"],\n  \"date\": \"[Seq #116]\",\n  \"time\": \"+1-555-326-2705\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": [
+        "Zoe"
+      ],
+      "date": "[Seq #116]",
+      "time": "+1-555-326-2705"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Remind me to renew the SSL certificates Jan 10, 2027 at 10:30 AM. [Seq #52]",
+    "ground_truth": {
+      "action": "create_reminder",
+      "reminder": "renew the SSL certificates",
+      "date": "Jan 10, 2027",
+      "time": "10:30"
+    },
+    "raw_prediction": "{\n  \"action\": \"create_reminder\",\n  \"reminder\": {\n    \"date\": \"2027-01-10\",\n    \"time\": \"10:30 AM\"\n  },\n  \"priority\": null,\n  \"assignee\": null\n}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "2027-01-10",
+        "time": "10:30 AM"
+      },
+      "priority": null,
+      "assignee": null
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Meeting tomorrow.",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": null,
+      "date": "tomorrow",
+      "time": null,
+      "topic": null
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"date\": \"tomorrow\",\n  \"time\": \"\",\n  \"topic\": \"\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "date": "tomorrow",
+      "time": "",
+      "topic": ""
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Email O'Connor about quarterly targets. [Variant #19]",
+    "ground_truth": {
+      "action": "draft_email",
+      "recipient": "O'Connor",
+      "subject": "quarterly targets",
+      "tone": "professional"
+    },
+    "raw_prediction": "{\n  \"action\": \"send_email\",\n  \"to\": \"oconnor@example.com\",\n  \"subject\": \"Quarterly Targets\",\n  \"body\": \"Dear O'Connor,\\n\\nI am writing to inform you of our quarterly targets for the coming year.\\n\"\n}",
+    "parsed_prediction": {
+      "action": "send_email",
+      "to": "oconnor@example.com",
+      "subject": "Quarterly Targets",
+      "body": "Dear O'Connor,\n\nI am writing to inform you of our quarterly targets for the coming year.\n"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Meeting with Kwame at noon next Monday. [Seq #249]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Kwame",
+      "date": "next Monday",
+      "time": "12:00",
+      "topic": null
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": {\n    \"name\": \"Kwame\"\n  },\n  \"date\": \"next Monday\",\n  \"time\": \"noon\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": {
+        "name": "Kwame"
+      },
+      "date": "next Monday",
+      "time": "noon"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Add task 'write unit tests for checkout service' with low priority due Dec 15th assigned to Nguyễn. [Seq #144]",
+    "ground_truth": {
+      "action": "manage_task",
+      "task": "write unit tests for checkout service",
+      "priority": "low",
+      "due_date": "Dec 15th",
+      "assignee": "Nguyễn"
+    },
+    "raw_prediction": "{\n  \"action\": \"add_task\",\n  \"task\": {\n    \"name\": \"write unit tests for checkout service\",\n    \"priority\": \"low\",\n    \"due_date\": \"Dec 15th\"\n  },\n  \"assignee\": \"Nguy\"\n}",
+    "parsed_prediction": {
+      "action": "add_task",
+      "task": {
+        "name": "write unit tests for checkout service",
+        "priority": "low",
+        "due_date": "Dec 15th"
+      },
+      "assignee": "Nguy"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Add task 'implement OAuth2 authentication flow' with medium priority due Jan 10, 2027 assigned to Xavier. [Seq #136]",
+    "ground_truth": {
+      "action": "manage_task",
+      "task": "implement OAuth2 authentication flow",
+      "priority": "medium",
+      "due_date": "Jan 10, 2027",
+      "assignee": "Xavier"
+    },
+    "raw_prediction": "{\n  \"action\": \"manage_task\",\n  \"task\": {\n    \"name\": \"implement OAuth2 authentication flow\",\n    \"priority\": \"medium\",\n    \"due_date\": \"2027-01-10\"\n  },\n  \"assignee\": \"Xavier\"\n}",
+    "parsed_prediction": {
+      "action": "manage_task",
+      "task": {
+        "name": "implement OAuth2 authentication flow",
+        "priority": "medium",
+        "due_date": "2027-01-10"
+      },
+      "assignee": "Xavier"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Assign task to Dmitri: implement OAuth2 authentication flow. Priority is urgent. [Seq #165]",
+    "ground_truth": {
+      "action": "manage_task",
+      "task": "implement OAuth2 authentication flow",
+      "priority": "urgent",
+      "due_date": null,
+      "assignee": "Dmitri"
+    },
+    "raw_prediction": "{\n  \"action\": \"assign_task\",\n  \"task\": {\n    \"name\": \"OAuth2 authentication flow implementation\",\n    \"priority\": \"urgent\",\n    \"due_date\": \"[Seq #165]\"\n  },\n  \"assignee\": \"Dmitri\"\n}",
+    "parsed_prediction": {
+      "action": "assign_task",
+      "task": {
+        "name": "OAuth2 authentication flow implementation",
+        "priority": "urgent",
+        "due_date": "[Seq #165]"
+      },
+      "assignee": "Dmitri"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Set up a sync with Jean-Luc at 3:15 PM on next weekend to discuss AI sprint kickoff. [Seq #246]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Jean-Luc",
+      "date": "next weekend",
+      "time": "15:15",
+      "topic": "AI sprint kickoff"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": [\"Jean-Luc\"],\n  \"date\": \"next weekend\",\n  \"time\": \"3:15 PM\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": [
+        "Jean-Luc"
+      ],
+      "date": "next weekend",
+      "time": "3:15 PM"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Add event 'Product Launch Demo' on Dec 15th at 6:30 PM in Auditorium. [Seq #98]",
+    "ground_truth": {
+      "action": "calendar_event",
+      "event_title": "Product Launch Demo",
+      "date": "Dec 15th",
+      "time": "18:30",
+      "location": "Auditorium"
+    },
+    "raw_prediction": "{\n  \"action\": \"create_reminder\",\n  \"reminder\": {\n    \"date\": \"Dec 15th\",\n    \"time\": \"6:30 PM\"\n  },\n  \"priority\": null,\n  \"due_date\": null,\n  \"assignee\": null\n}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "Dec 15th",
+        "time": "6:30 PM"
+      },
+      "priority": null,
+      "due_date": null,
+      "assignee": null
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Don't forget to renew the SSL certificates at 9 AM 2026-12-01! [Seq #78]",
+    "ground_truth": {
+      "action": "create_reminder",
+      "reminder": "renew the SSL certificates",
+      "date": "2026-12-01",
+      "time": "09:00"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"date\": \"2026-12-01T09:00:00Z\",\n  \"time\": \"09:00\",\n  \"topic\": \"Renew SSL Certificates\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "date": "2026-12-01T09:00:00Z",
+      "time": "09:00",
+      "topic": "Renew SSL Certificates"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Add task 'refactor monolithic parser into modular microservice' with medium priority due this evening assigned to Elena. [Seq #192]",
+    "ground_truth": {
+      "action": "manage_task",
+      "task": "refactor monolithic parser into modular microservice",
+      "priority": "medium",
+      "due_date": "this evening",
+      "assignee": "Elena"
+    },
+    "raw_prediction": "{\n  \"action\": \"manage_task\",\n  \"task\": {\n    \"name\": \"refactor monolithic parser into modular microservice\",\n    \"priority\": \"medium\",\n    \"due_date\": \"this evening\"\n  },\n  \"assignee\": \"Elena\"\n}",
+    "parsed_prediction": {
+      "action": "manage_task",
+      "task": {
+        "name": "refactor monolithic parser into modular microservice",
+        "priority": "medium",
+        "due_date": "this evening"
+      },
+      "assignee": "Elena"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Book a call with Kwame for frontend architecture refactor tomorrow at 10:30 AM. [Seq #117]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Kwame",
+      "date": "tomorrow",
+      "time": "10:30",
+      "topic": "frontend architecture refactor"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": [\"Kwame\"],\n  \"date\": \"2023-09-18T10:30:00Z\",\n  \"time\": \"10:30:00Z\",\n  \"topic\": \"frontend architecture refactor\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": [
+        "Kwame"
+      ],
+      "date": "2023-09-18T10:30:00Z",
+      "time": "10:30:00Z",
+      "topic": "frontend architecture refactor"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Meeting with Björn at 10:30 AM Dec 15th.",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Björn",
+      "date": "Dec 15th",
+      "time": "10:30",
+      "topic": null
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": {\n    \"name\": \"Björn\"\n  },\n  \"date\": \"2023-12-15T10:30:00Z\",\n  \"time\": \"10:30:00\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": {
+        "name": "Björn"
+      },
+      "date": "2023-12-15T10:30:00Z",
+      "time": "10:30:00"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Add task 'write unit tests for checkout service' with urgent priority due Dec 15th assigned to Chen. [Seq #172]",
+    "ground_truth": {
+      "action": "manage_task",
+      "task": "write unit tests for checkout service",
+      "priority": "urgent",
+      "due_date": "Dec 15th",
+      "assignee": "Chen"
+    },
+    "raw_prediction": "{\n  \"action\": \"manage_task\",\n  \"task\": {\n    \"name\": \"write unit tests for checkout service\",\n    \"priority\": \"urgent\",\n    \"due_date\": \"2023-12-15\"\n  },\n  \"assignee\": \"Chen\"\n}",
+    "parsed_prediction": {
+      "action": "manage_task",
+      "task": {
+        "name": "write unit tests for checkout service",
+        "priority": "urgent",
+        "due_date": "2023-12-15"
+      },
+      "assignee": "Chen"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Add contact: Sneha (Anthropic) - Reach out via sneha@deepmind.google.",
+    "ground_truth": {
+      "action": "extract_contact",
+      "name": "Sneha",
+      "role": null,
+      "company": "Anthropic",
+      "email": "sneha@deepmind.google",
+      "phone": null
+    },
+    "raw_prediction": "{\n  \"action\": \"add_contact\",\n  \"name\": \"Sneha\",\n  \"role\": \"Anthropic\",\n  \"email\": \"sneha@deepmind.google\"\n}",
+    "parsed_prediction": {
+      "action": "add_contact",
+      "name": "Sneha",
+      "role": "Anthropic",
+      "email": "sneha@deepmind.google"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Send a quick note to Aoi checking in on client onboarding kickoff. [Seq #131]",
+    "ground_truth": {
+      "action": "draft_email",
+      "recipient": "Aoi",
+      "subject": "Follow-up: client onboarding kickoff",
+      "tone": "casual"
+    },
+    "raw_prediction": "{\n  \"action\": \"send_note\",\n  \"to\": {\n    \"name\": \"Aoi\",\n    \"role\": \"client\",\n    \"company\": \"onboarding team\"\n  },\n  \"content\": \"Hi Aoi, I'm here for the onboarding kickoff. Let me know if you need anything.\"\n}",
+    "parsed_prediction": {
+      "action": "send_note",
+      "to": {
+        "name": "Aoi",
+        "role": "client",
+        "company": "onboarding team"
+      },
+      "content": "Hi Aoi, I'm here for the onboarding kickoff. Let me know if you need anything."
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Save contact: Priya, working as VP of Product at OpenAI. Email is priya@university.edu and phone is +1-555-662-9043. [Seq #129]",
+    "ground_truth": {
+      "action": "extract_contact",
+      "name": "Priya",
+      "role": "VP of Product",
+      "company": "OpenAI",
+      "email": "priya@university.edu",
+      "phone": "+1-555-662-9043"
+    },
+    "raw_prediction": "{\n  \"action\": \"extract_contact\",\n  \"name\": \"Priya\",\n  \"role\": \"VP of Product\",\n  \"company\": \"OpenAI\",\n  \"email\": \"priya@university.edu\",\n  \"phone\": \"+1-555-662-9043\"\n}",
+    "parsed_prediction": {
+      "action": "extract_contact",
+      "name": "Priya",
+      "role": "VP of Product",
+      "company": "OpenAI",
+      "email": "priya@university.edu",
+      "phone": "+1-555-662-9043"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Don't forget to water office plants at 11:45 AM Jan 10, 2027! [Seq #210]",
+    "ground_truth": {
+      "action": "create_reminder",
+      "reminder": "water office plants",
+      "date": "Jan 10, 2027",
+      "time": "11:45"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": [\"office_plants\"],\n  \"date\": \"2027-01-10\",\n  \"time\": \"11:45 AM\",\n  \"topic\": \"water office plants\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": [
+        "office_plants"
+      ],
+      "date": "2027-01-10",
+      "time": "11:45 AM",
+      "topic": "water office plants"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Task: refactor monolithic parser into modular microservice. Urgent! [Seq #51]",
+    "ground_truth": {
+      "action": "manage_task",
+      "task": "refactor monolithic parser into modular microservice",
+      "priority": "urgent",
+      "due_date": null,
+      "assignee": null
+    },
+    "raw_prediction": "{\n  \"action\": \"manage_task\",\n  \"task\": {\n    \"priority\": \"high\",\n    \"due_date\": \"now\",\n    \"assignee\": \"team_leader\"\n  },\n  \"description\": \"Refactor the monolithic parser into a modular microservice for better scalability and maintainability.\"\n}",
+    "parsed_prediction": {
+      "action": "manage_task",
+      "task": {
+        "priority": "high",
+        "due_date": "now",
+        "assignee": "team_leader"
+      },
+      "description": "Refactor the monolithic parser into a modular microservice for better scalability and maintainability."
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Assign task to Liam: refactor monolithic parser into modular microservice. Priority is medium. [Seq #141]",
+    "ground_truth": {
+      "action": "manage_task",
+      "task": "refactor monolithic parser into modular microservice",
+      "priority": "medium",
+      "due_date": null,
+      "assignee": "Liam"
+    },
+    "raw_prediction": "{\n  \"action\": \"manage_task\",\n  \"task\": {\n    \"priority\": \"medium\",\n    \"assignee\": \"Liam\"\n  },\n  \"due_date\": \"[Seq #141]\",\n  \"name\": \"refactor monolithic parser into modular microservice\"\n}",
+    "parsed_prediction": {
+      "action": "manage_task",
+      "task": {
+        "priority": "medium",
+        "assignee": "Liam"
+      },
+      "due_date": "[Seq #141]",
+      "name": "refactor monolithic parser into modular microservice"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Write a follow-up email to Mei about marketing campaign retrospection. [Seq #58]",
+    "ground_truth": {
+      "action": "draft_email",
+      "recipient": "Mei",
+      "subject": "marketing campaign retrospection",
+      "tone": "follow-up"
+    },
+    "raw_prediction": "{\n  \"action\": \"draft_email\",\n  \"recipient\": {\n    \"name\": \"Mei\",\n    \"role\": \"Marketing Manager\",\n    \"company\": \"XYZ Corporation\"\n  },\n  \"subject\": \"Follow-Up: Marketing Campaign Retrospective\",\n  \"tone\": \"informative\",\n  \"date\": \"2023-09-15T14:00:00Z\",\n  \"time\": \"14:00:00\"\n}",
+    "parsed_prediction": {
+      "action": "draft_email",
+      "recipient": {
+        "name": "Mei",
+        "role": "Marketing Manager",
+        "company": "XYZ Corporation"
+      },
+      "subject": "Follow-Up: Marketing Campaign Retrospective",
+      "tone": "informative",
+      "date": "2023-09-15T14:00:00Z",
+      "time": "14:00:00"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Can you put a meeting with Zoe on my calendar coming Tuesday at 16:00? [Seq #223]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Zoe",
+      "date": "coming Tuesday",
+      "time": "16:00",
+      "topic": null
+    },
+    "raw_prediction": "{\"action\": \"schedule_meeting\", \"person\": \"Zoe\", \"date\": \"2023-09-18T16:00:00\", \"time\": \"16:00\"}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": "Zoe",
+      "date": "2023-09-18T16:00:00",
+      "time": "16:00"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Set a reminder: check server disk usage on next weekend.",
+    "ground_truth": {
+      "action": "create_reminder",
+      "reminder": "check server disk usage",
+      "date": "next weekend",
+      "time": null
+    },
+    "raw_prediction": "{\n  \"action\": \"create_reminder\",\n  \"reminder\": {\n    \"date\": \"next weekend\",\n    \"time\": \"08:00\"\n  }\n}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "next weekend",
+        "time": "08:00"
+      }
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Set a reminder: check server disk usage on next weekend. [Seq #93]",
+    "ground_truth": {
+      "action": "create_reminder",
+      "reminder": "check server disk usage",
+      "date": "next weekend",
+      "time": null
+    },
+    "raw_prediction": "{\n  \"action\": \"create_reminder\",\n  \"reminder\": {\n    \"date\": \"next weekend\",\n    \"time\": \"08:00\"\n  }\n}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "next weekend",
+        "time": "08:00"
+      }
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Save contact: Kwame, working as Senior ML Engineer at DeepMind. Email is kwame@deepmind.google and phone is +1-555-686-5380.",
+    "ground_truth": {
+      "action": "extract_contact",
+      "name": "Kwame",
+      "role": "Senior ML Engineer",
+      "company": "DeepMind",
+      "email": "kwame@deepmind.google",
+      "phone": "+1-555-686-5380"
+    },
+    "raw_prediction": "{\n  \"action\": \"extract_contact\",\n  \"name\": \"Kwame\",\n  \"role\": \"Senior ML Engineer\",\n  \"company\": \"DeepMind\",\n  \"email\": \"kwame@deepmind.google\",\n  \"phone\": \"+1-555-686-5380\"\n}",
+    "parsed_prediction": {
+      "action": "extract_contact",
+      "name": "Kwame",
+      "role": "Senior ML Engineer",
+      "company": "DeepMind",
+      "email": "kwame@deepmind.google",
+      "phone": "+1-555-686-5380"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Create a reminder for send invoice to Acme Corp. [Seq #63]",
+    "ground_truth": {
+      "action": "create_reminder",
+      "reminder": "send invoice to Acme Corp",
+      "date": null,
+      "time": null
+    },
+    "raw_prediction": "{\n  \"action\": \"create_reminder\",\n  \"reminder\": {\n    \"date\": \"08/09/2023\",\n    \"time\": \"14:00\",\n    \"task\": \"send invoice\"\n  }\n}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "08/09/2023",
+        "time": "14:00",
+        "task": "send invoice"
+      }
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Add event 'Hackathon Day 1' on next weekend at 9 AM in Room A. [Seq #96]",
+    "ground_truth": {
+      "action": "calendar_event",
+      "event_title": "Hackathon Day 1",
+      "date": "next weekend",
+      "time": "09:00",
+      "location": "Room A"
+    },
+    "raw_prediction": "{\n  \"action\": \"create_reminder\",\n  \"reminder\": {\n    \"date\": \"next weekend\",\n    \"time\": \"9 AM\"\n  },\n  \"event_title\": \"Hackathon Day 1\",\n  \"location\": \"Room A\"\n}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "next weekend",
+        "time": "9 AM"
+      },
+      "event_title": "Hackathon Day 1",
+      "location": "Room A"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Put Hackathon Day 1 on calendar for coming Tuesday at Room A.",
+    "ground_truth": {
+      "action": "calendar_event",
+      "event_title": "Hackathon Day 1",
+      "date": "coming Tuesday",
+      "time": null,
+      "location": "Room A"
+    },
+    "raw_prediction": "{\n  \"action\": \"calendar_event\",\n  \"event_title\": \"Hackathon Day 1\",\n  \"date\": \"2023-10-07T09:00:00Z\",\n  \"time\": \"09:00:00Z\",\n  \"location\": \"Room A\"\n}",
+    "parsed_prediction": {
+      "action": "calendar_event",
+      "event_title": "Hackathon Day 1",
+      "date": "2023-10-07T09:00:00Z",
+      "time": "09:00:00Z",
+      "location": "Room A"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Set up a sync with Elena at 16:00 on coming Tuesday to discuss Q3 roadmap review. [Seq #226]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Elena",
+      "date": "coming Tuesday",
+      "time": "16:00",
+      "topic": "Q3 roadmap review"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": [\"Elena\"],\n  \"date\": \"2023-08-19T17:00:00Z\",\n  \"time\": \"16:00\",\n  \"topic\": \"Q3 roadmap review\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": [
+        "Elena"
+      ],
+      "date": "2023-08-19T17:00:00Z",
+      "time": "16:00",
+      "topic": "Q3 roadmap review"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Set a reminder: check server disk usage on Dec 15th. [Seq #81]",
+    "ground_truth": {
+      "action": "create_reminder",
+      "reminder": "check server disk usage",
+      "date": "Dec 15th",
+      "time": null
+    },
+    "raw_prediction": "{\n  \"action\": \"create_reminder\",\n  \"reminder\": {\n    \"date\": \"Dec 15th\",\n    \"time\": \"09:00\"\n  },\n  \"priority\": null,\n  \"due_date\": null,\n  \"assignee\": null\n}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "Dec 15th",
+        "time": "09:00"
+      },
+      "priority": null,
+      "due_date": null,
+      "assignee": null
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Meeting tomorrow. [Variant #61]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": null,
+      "date": "tomorrow",
+      "time": null,
+      "topic": null
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"date\": \"tomorrow\",\n  \"time\": \"\",\n  \"topic\": \"\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "date": "tomorrow",
+      "time": "",
+      "topic": ""
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Set a reminder: backup production Postgres databases on next Friday. [Seq #137]",
+    "ground_truth": {
+      "action": "create_reminder",
+      "reminder": "backup production Postgres databases",
+      "date": "next Friday",
+      "time": null
+    },
+    "raw_prediction": "{\n  \"action\": \"create_reminder\",\n  \"reminder\": {\n    \"date\": \"next Friday\",\n    \"time\": \"08:00\"\n  },\n  \"priority\": null,\n  \"due_date\": null,\n  \"assignee\": null\n}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "next Friday",
+        "time": "08:00"
+      },
+      "priority": null,
+      "due_date": null,
+      "assignee": null
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Send email to contact@deepmind.google regarding partnership proposal. [Variant #94]",
+    "ground_truth": {
+      "action": "draft_email",
+      "recipient": "contact@deepmind.google",
+      "subject": "partnership proposal",
+      "tone": "professional"
+    },
+    "raw_prediction": "{\n  \"action\": \"draft_email\",\n  \"recipient\": {\n    \"name\": \"contact@deepmind.google\",\n    \"role\": \"partner\",\n    \"company\": \"DeepMind AI\"\n  },\n  \"subject\": \"Partnership Proposal - DeepMind AI\",\n  \"tone\": \"informative\"\n}",
+    "parsed_prediction": {
+      "action": "draft_email",
+      "recipient": {
+        "name": "contact@deepmind.google",
+        "role": "partner",
+        "company": "DeepMind AI"
+      },
+      "subject": "Partnership Proposal - DeepMind AI",
+      "tone": "informative"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Quick sync with Jean-Luc next Friday around noon to review bug #1042. [Variant #85]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Jean-Luc",
+      "date": "next Friday",
+      "time": "12:00",
+      "topic": "review bug #1042"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": [\"Jean-Luc\"],\n  \"date\": \"2023-05-15T12:00:00Z\",\n  \"time\": \"12:00:00Z\",\n  \"topic\": \"[Variant #85]\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": [
+        "Jean-Luc"
+      ],
+      "date": "2023-05-15T12:00:00Z",
+      "time": "12:00:00Z",
+      "topic": "[Variant #85]"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Set a reminder: review the pull request #402 on next weekend. [Seq #149]",
+    "ground_truth": {
+      "action": "create_reminder",
+      "reminder": "review the pull request #402",
+      "date": "next weekend",
+      "time": null
+    },
+    "raw_prediction": "{\"action\": \"create_reminder\", \"reminder\": {\"date\": \"[Seq #149]\", \"time\": \"next weekend\"}, \"task\": null, \"priority\": null, \"due_date\": null}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "[Seq #149]",
+        "time": "next weekend"
+      },
+      "task": null,
+      "priority": null,
+      "due_date": null
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Can you put a meeting with Sophia on my calendar tomorrow at 6:30 PM? [Seq #163]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Sophia",
+      "date": "tomorrow",
+      "time": "18:30",
+      "topic": null
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": {\n    \"name\": \"Sophia\"\n  },\n  \"date\": \"tomorrow\",\n  \"time\": \"6:30 PM\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": {
+        "name": "Sophia"
+      },
+      "date": "tomorrow",
+      "time": "6:30 PM"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Create a new task: refactor monolithic parser into modular microservice due next Friday.",
+    "ground_truth": {
+      "action": "manage_task",
+      "task": "refactor monolithic parser into modular microservice",
+      "priority": "medium",
+      "due_date": "next Friday",
+      "assignee": null
+    },
+    "raw_prediction": "{\n  \"action\": \"create_task\",\n  \"task\": {\n    \"priority\": null,\n    \"due_date\": \"next Friday\"\n  },\n  \"name\": \"Refactor Monolithic Parser to Modular Microservices\",\n  \"role\": null,\n  \"company\": null,\n  \"email\": null,\n  \"phone\": null\n}",
+    "parsed_prediction": {
+      "action": "create_task",
+      "task": {
+        "priority": null,
+        "due_date": "next Friday"
+      },
+      "name": "Refactor Monolithic Parser to Modular Microservices",
+      "role": null,
+      "company": null,
+      "email": null,
+      "phone": null
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Draft an email to Rohan regarding marketing campaign retrospection. [Seq #93]",
+    "ground_truth": {
+      "action": "draft_email",
+      "recipient": "Rohan",
+      "subject": "marketing campaign retrospection",
+      "tone": "professional"
+    },
+    "raw_prediction": "{\n  \"action\": \"draft_email\",\n  \"recipient\": {\n    \"name\": \"Rohan\",\n    \"role\": \"Marketing Manager\",\n    \"company\": \"XYZ Corporation\"\n  },\n  \"subject\": \"Marketing Campaign Retrospective - [Seq #93]\",\n  \"tone\": \"informative\",\n  \"due_date\": \"2023-10-01T14:00:00Z\"\n}",
+    "parsed_prediction": {
+      "action": "draft_email",
+      "recipient": {
+        "name": "Rohan",
+        "role": "Marketing Manager",
+        "company": "XYZ Corporation"
+      },
+      "subject": "Marketing Campaign Retrospective - [Seq #93]",
+      "tone": "informative",
+      "due_date": "2023-10-01T14:00:00Z"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Meeting with Sophia at 2 PM next weekend. [Seq #69]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Sophia",
+      "date": "next weekend",
+      "time": "14:00",
+      "topic": null
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": {\n    \"name\": \"Sophia\"\n  },\n  \"date\": \"next weekend\",\n  \"time\": \"2 PM\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": {
+        "name": "Sophia"
+      },
+      "date": "next weekend",
+      "time": "2 PM"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Assign task to Chen: optimize PostgreSQL indexing for users table. Priority is high. [Seq #41]",
+    "ground_truth": {
+      "action": "manage_task",
+      "task": "optimize PostgreSQL indexing for users table",
+      "priority": "high",
+      "due_date": null,
+      "assignee": "Chen"
+    },
+    "raw_prediction": "{\n  \"action\": \"manage_task\",\n  \"task\": {\n    \"name\": \"optimize PostgreSQL indexing for users table\",\n    \"priority\": \"high\",\n    \"due_date\": \"[Seq #41]\"\n  }\n}",
+    "parsed_prediction": {
+      "action": "manage_task",
+      "task": {
+        "name": "optimize PostgreSQL indexing for users table",
+        "priority": "high",
+        "due_date": "[Seq #41]"
+      }
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Can you put a meeting with Fatima on my calendar next weekend at noon? [Seq #188]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Fatima",
+      "date": "next weekend",
+      "time": "12:00",
+      "topic": null
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": {\n    \"name\": \"Fatima\"\n  },\n  \"date\": \"next weekend\",\n  \"time\": \"noon\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": {
+        "name": "Fatima"
+      },
+      "date": "next weekend",
+      "time": "noon"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Schedule a meeting with Liam 2026-12-01 at 16:00 regarding client onboarding kickoff. [Seq #225]",
+    "ground_truth": {
+      "action": "schedule_meeting",
+      "person": "Liam",
+      "date": "2026-12-01",
+      "time": "16:00",
+      "topic": "client onboarding kickoff"
+    },
+    "raw_prediction": "{\n  \"action\": \"schedule_meeting\",\n  \"person\": {\n    \"name\": \"Liam 2026-12-01\"\n  },\n  \"date\": \"2026-12-01\",\n  \"time\": \"16:00\"\n}",
+    "parsed_prediction": {
+      "action": "schedule_meeting",
+      "person": {
+        "name": "Liam 2026-12-01"
+      },
+      "date": "2026-12-01",
+      "time": "16:00"
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Create a new task: write unit tests for checkout service due the 4th of July. [Seq #46]",
+    "ground_truth": {
+      "action": "manage_task",
+      "task": "write unit tests for checkout service",
+      "priority": "medium",
+      "due_date": "the 4th of July",
+      "assignee": null
+    },
+    "raw_prediction": "{\n  \"action\": \"create_reminder\",\n  \"reminder\": {\n    \"date\": \"2023-07-04\",\n    \"time\": \"10:00 AM\"\n  },\n  \"task\": {\n    \"priority\": null,\n    \"due_date\": \"2023-07-04\",\n    \"assignee\": null\n  }\n}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "2023-07-04",
+        "time": "10:00 AM"
+      },
+      "task": {
+        "priority": null,
+        "due_date": "2023-07-04",
+        "assignee": null
+      }
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Set a reminder: water office plants on tomorrow. [Seq #49]",
+    "ground_truth": {
+      "action": "create_reminder",
+      "reminder": "water office plants",
+      "date": "tomorrow",
+      "time": null
+    },
+    "raw_prediction": "{\"action\": \"create_reminder\", \"reminder\": {\"date\": \"tomorrow\", \"time\": \"08:00\", \"task\": \"water office plants\"}}",
+    "parsed_prediction": {
+      "action": "create_reminder",
+      "reminder": {
+        "date": "tomorrow",
+        "time": "08:00",
+        "task": "water office plants"
+      }
+    },
+    "is_valid_json": true
+  },
+  {
+    "input": "Draft an email to Xavier regarding database migration audit.",
+    "ground_truth": {
+      "action": "draft_email",
+      "recipient": "Xavier",
+      "subject": "database migration audit",
+      "tone": "professional"
+    },
+    "raw_prediction": "{\n  \"action\": \"draft_email\",\n  \"recipient\": {\n    \"name\": \"Xavier\",\n    \"role\": \"Project Manager\"\n  },\n  \"subject\": \"Database Migration Audit for Project X\",\n  \"tone\": \"informative\",\n  \"due_date\": \"2023-10-15T14:00:00Z\",\n  \"assignee\": null\n}",
+    "parsed_prediction": {
+      "action": "draft_email",
+      "recipient": {
+        "name": "Xavier",
+        "role": "Project Manager"
+      },
+      "subject": "Database Migration Audit for Project X",
+      "tone": "informative",
+      "due_date": "2023-10-15T14:00:00Z",
+      "assignee": null
+    },
+    "is_valid_json": true
+  }
+]

@@ -1,0 +1,1640 @@
+[
+  {
+    "input": "Set a reminder: renew the SSL certificates on next Friday. [Seq #89]",
+    "output": {
+      "action": "create_reminder",
+      "reminder": "renew the SSL certificates",
+      "date": "next Friday",
+      "time": null
+    },
+    "category": "reminder_creation"
+  },
+  {
+    "input": "Add contact: Priya (DeepMind) - Reach out via priya@startup.ai. [Seq #139]",
+    "output": {
+      "action": "extract_contact",
+      "name": "Priya",
+      "role": null,
+      "company": "DeepMind",
+      "email": "priya@startup.ai",
+      "phone": null
+    },
+    "category": "contact_extraction"
+  },
+  {
+    "input": "Add contact: François (OpenAI) - Reach out via françois@deepmind.google. [Seq #49]",
+    "output": {
+      "action": "extract_contact",
+      "name": "François",
+      "role": null,
+      "company": "OpenAI",
+      "email": "françois@deepmind.google",
+      "phone": null
+    },
+    "category": "contact_extraction"
+  },
+  {
+    "input": "Create a new task: write unit tests for checkout service due coming Tuesday. [Seq #102]",
+    "output": {
+      "action": "manage_task",
+      "task": "write unit tests for checkout service",
+      "priority": "medium",
+      "due_date": "coming Tuesday",
+      "assignee": null
+    },
+    "category": "task_management"
+  },
+  {
+    "input": "Add contact: Elena (OpenAI) - Reach out via elena@startup.ai. [Seq #52]",
+    "output": {
+      "action": "extract_contact",
+      "name": "Elena",
+      "role": null,
+      "company": "OpenAI",
+      "email": "elena@startup.ai",
+      "phone": null
+    },
+    "category": "contact_extraction"
+  },
+  {
+    "input": "Book a call with Neha for frontend architecture refactor Jan 10, 2027 at 2 PM. [Seq #202]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Neha",
+      "date": "Jan 10, 2027",
+      "time": "14:00",
+      "topic": "frontend architecture refactor"
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Schedule a meeting with Aoi tomorrow at 10:30 AM regarding budget allocation sync. [Seq #100]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Aoi",
+      "date": "tomorrow",
+      "time": "10:30",
+      "topic": "budget allocation sync"
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Set up a sync with Zoe at 8 PM on next weekend to discuss Q3 roadmap review. [Seq #256]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Zoe",
+      "date": "next weekend",
+      "time": "20:00",
+      "topic": "Q3 roadmap review"
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Can you put a meeting with Björn on my calendar this evening at noon? [Seq #68]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Björn",
+      "date": "this evening",
+      "time": "12:00",
+      "topic": null
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Send a quick note to Björn checking in on frontend architecture refactor. [Seq #56]",
+    "output": {
+      "action": "draft_email",
+      "recipient": "Björn",
+      "subject": "Follow-up: frontend architecture refactor",
+      "tone": "casual"
+    },
+    "category": "email_drafting"
+  },
+  {
+    "input": "Put Product Launch Demo on calendar for 2026-12-01 at Auditorium. [Seq #47]",
+    "output": {
+      "action": "calendar_event",
+      "event_title": "Product Launch Demo",
+      "date": "2026-12-01",
+      "time": null,
+      "location": "Auditorium"
+    },
+    "category": "calendar_events"
+  },
+  {
+    "input": "Write a follow-up email to Nguyễn about annual performance appraisal. [Seq #121]",
+    "output": {
+      "action": "draft_email",
+      "recipient": "Nguyễn",
+      "subject": "annual performance appraisal",
+      "tone": "follow-up"
+    },
+    "category": "email_drafting"
+  },
+  {
+    "input": "Email O'Connor about quarterly targets. [Variant #19]",
+    "output": {
+      "action": "draft_email",
+      "recipient": "O'Connor",
+      "subject": "quarterly targets",
+      "tone": "professional"
+    },
+    "category": "edge_cases"
+  },
+  {
+    "input": "Add event 'Board of Directors Assembly' on Jan 10, 2027 at 6:30 PM in Building 42 Room 101. [Seq #58]",
+    "output": {
+      "action": "calendar_event",
+      "event_title": "Board of Directors Assembly",
+      "date": "Jan 10, 2027",
+      "time": "18:30",
+      "location": "Building 42 Room 101"
+    },
+    "category": "calendar_events"
+  },
+  {
+    "input": "Remind me to call the dentist for checkup next weekend at 2 PM. [Seq #196]",
+    "output": {
+      "action": "create_reminder",
+      "reminder": "call the dentist for checkup",
+      "date": "next weekend",
+      "time": "14:00"
+    },
+    "category": "reminder_creation"
+  },
+  {
+    "input": "Create a new task: write unit tests for checkout service due coming Tuesday. [Seq #70]",
+    "output": {
+      "action": "manage_task",
+      "task": "write unit tests for checkout service",
+      "priority": "medium",
+      "due_date": "coming Tuesday",
+      "assignee": null
+    },
+    "category": "task_management"
+  },
+  {
+    "input": "Add event 'Product Launch Demo' on Jan 10, 2027 at 16:00 in Building 42 Room 101. [Seq #52]",
+    "output": {
+      "action": "calendar_event",
+      "event_title": "Product Launch Demo",
+      "date": "Jan 10, 2027",
+      "time": "16:00",
+      "location": "Building 42 Room 101"
+    },
+    "category": "calendar_events"
+  },
+  {
+    "input": "Add task 'refactor monolithic parser into modular microservice' with medium priority due this evening assigned to Tariq. [Seq #88]",
+    "output": {
+      "action": "manage_task",
+      "task": "refactor monolithic parser into modular microservice",
+      "priority": "medium",
+      "due_date": "this evening",
+      "assignee": "Tariq"
+    },
+    "category": "task_management"
+  },
+  {
+    "input": "Task: write unit tests for checkout service. Urgent! [Seq #195]",
+    "output": {
+      "action": "manage_task",
+      "task": "write unit tests for checkout service",
+      "priority": "urgent",
+      "due_date": null,
+      "assignee": null
+    },
+    "category": "task_management"
+  },
+  {
+    "input": "Schedule a meeting with Mei Dec 15th at 10:30 AM regarding investor pitch rehearsal. [Seq #185]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Mei",
+      "date": "Dec 15th",
+      "time": "10:30",
+      "topic": "investor pitch rehearsal"
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Business card scanned: Jean-Luc, Staff Research Scientist at OpenAI. Tel: +1-555-706-2020. [Seq #80]",
+    "output": {
+      "action": "extract_contact",
+      "name": "Jean-Luc",
+      "role": "Staff Research Scientist",
+      "company": "OpenAI",
+      "email": null,
+      "phone": "+1-555-706-2020"
+    },
+    "category": "contact_extraction"
+  },
+  {
+    "input": "Can you put a meeting with Rahul on my calendar the 4th of July at 2 PM? [Seq #198]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Rahul",
+      "date": "the 4th of July",
+      "time": "14:00",
+      "topic": null
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Can you put a meeting with Elena on my calendar next weekend at 8 PM? [Seq #258]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Elena",
+      "date": "next weekend",
+      "time": "20:00",
+      "topic": null
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Task: implement OAuth2 authentication flow. Urgent! [Seq #139]",
+    "output": {
+      "action": "manage_task",
+      "task": "implement OAuth2 authentication flow",
+      "priority": "urgent",
+      "due_date": null,
+      "assignee": null
+    },
+    "category": "task_management"
+  },
+  {
+    "input": "Business card scanned: Vikram, Chief Architect at Google. Tel: +1-555-734-5026. [Seq #98]",
+    "output": {
+      "action": "extract_contact",
+      "name": "Vikram",
+      "role": "Chief Architect",
+      "company": "Google",
+      "email": null,
+      "phone": "+1-555-734-5026"
+    },
+    "category": "contact_extraction"
+  },
+  {
+    "input": "Business card scanned: Priya, Senior ML Engineer at Acme Corp. Tel: +1-555-338-4584. [Seq #110]",
+    "output": {
+      "action": "extract_contact",
+      "name": "Priya",
+      "role": "Senior ML Engineer",
+      "company": "Acme Corp",
+      "email": null,
+      "phone": "+1-555-338-4584"
+    },
+    "category": "contact_extraction"
+  },
+  {
+    "input": "Remind me later. [Variant #73]",
+    "output": {
+      "action": "create_reminder",
+      "reminder": null,
+      "date": null,
+      "time": null
+    },
+    "category": "edge_cases"
+  },
+  {
+    "input": "Schedule a meeting with Liam next Friday at 8 PM regarding investor pitch rehearsal. [Seq #145]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Liam",
+      "date": "next Friday",
+      "time": "20:00",
+      "topic": "investor pitch rehearsal"
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Task: benchmark quantized model latency on Apple M2. Urgent!",
+    "output": {
+      "action": "manage_task",
+      "task": "benchmark quantized model latency on Apple M2",
+      "priority": "urgent",
+      "due_date": null,
+      "assignee": null
+    },
+    "category": "task_management"
+  },
+  {
+    "input": "Assign task to Fatima: fix memory leak in worker daemon. Priority is low. [Seq #169]",
+    "output": {
+      "action": "manage_task",
+      "task": "fix memory leak in worker daemon",
+      "priority": "low",
+      "due_date": null,
+      "assignee": "Fatima"
+    },
+    "category": "task_management"
+  },
+  {
+    "input": "Don't forget to backup production Postgres databases at 6:30 PM Jan 10, 2027! [Seq #146]",
+    "output": {
+      "action": "create_reminder",
+      "reminder": "backup production Postgres databases",
+      "date": "Jan 10, 2027",
+      "time": "18:30"
+    },
+    "category": "reminder_creation"
+  },
+  {
+    "input": "Set up a sync with François at 16:00 on tomorrow to discuss frontend architecture refactor. [Seq #216]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "François",
+      "date": "tomorrow",
+      "time": "16:00",
+      "topic": "frontend architecture refactor"
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Remind me to check server disk usage Dec 15th at 2 PM. [Seq #76]",
+    "output": {
+      "action": "create_reminder",
+      "reminder": "check server disk usage",
+      "date": "Dec 15th",
+      "time": "14:00"
+    },
+    "category": "reminder_creation"
+  },
+  {
+    "input": "Write a urgent email to François about database migration audit. [Seq #31]",
+    "output": {
+      "action": "draft_email",
+      "recipient": "François",
+      "subject": "database migration audit",
+      "tone": "urgent"
+    },
+    "category": "email_drafting"
+  },
+  {
+    "input": "Add contact: Tariq (DeepMind) - Reach out via tariq@university.edu.",
+    "output": {
+      "action": "extract_contact",
+      "name": "Tariq",
+      "role": null,
+      "company": "DeepMind",
+      "email": "tariq@university.edu",
+      "phone": null
+    },
+    "category": "contact_extraction"
+  },
+  {
+    "input": "Draft an email to Sneha regarding budget allocation sync. [Seq #54]",
+    "output": {
+      "action": "draft_email",
+      "recipient": "Sneha",
+      "subject": "budget allocation sync",
+      "tone": "professional"
+    },
+    "category": "email_drafting"
+  },
+  {
+    "input": "Save contact: Priya, working as Staff Research Scientist at OpenAI. Email is priya@deepmind.google and phone is +1-555-843-4836. [Seq #33]",
+    "output": {
+      "action": "extract_contact",
+      "name": "Priya",
+      "role": "Staff Research Scientist",
+      "company": "OpenAI",
+      "email": "priya@deepmind.google",
+      "phone": "+1-555-843-4836"
+    },
+    "category": "contact_extraction"
+  },
+  {
+    "input": "Remind me to update dependencies in requirements.txt 2026-12-01 at 5 PM.",
+    "output": {
+      "action": "create_reminder",
+      "reminder": "update dependencies in requirements.txt",
+      "date": "2026-12-01",
+      "time": "17:00"
+    },
+    "category": "reminder_creation"
+  },
+  {
+    "input": "Book a call with Aoi for frontend architecture refactor this evening at 11:45 AM. [Seq #87]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Aoi",
+      "date": "this evening",
+      "time": "11:45",
+      "topic": "frontend architecture refactor"
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Put Hackathon Day 1 on calendar for Jan 10, 2027 at Conference Room A. [Seq #77]",
+    "output": {
+      "action": "calendar_event",
+      "event_title": "Hackathon Day 1",
+      "date": "Jan 10, 2027",
+      "time": null,
+      "location": "Conference Room A"
+    },
+    "category": "calendar_events"
+  },
+  {
+    "input": "Add contact: Sophia (Stripe) - Reach out via sophia@university.edu.",
+    "output": {
+      "action": "extract_contact",
+      "name": "Sophia",
+      "role": null,
+      "company": "Stripe",
+      "email": "sophia@university.edu",
+      "phone": null
+    },
+    "category": "contact_extraction"
+  },
+  {
+    "input": "Create a reminder for backup production Postgres databases. [Seq #127]",
+    "output": {
+      "action": "create_reminder",
+      "reminder": "backup production Postgres databases",
+      "date": null,
+      "time": null
+    },
+    "category": "reminder_creation"
+  },
+  {
+    "input": "Create a new task: document API endpoints with OpenAPI specs due 2026-12-01. [Seq #118]",
+    "output": {
+      "action": "manage_task",
+      "task": "document API endpoints with OpenAPI specs",
+      "priority": "medium",
+      "due_date": "2026-12-01",
+      "assignee": null
+    },
+    "category": "task_management"
+  },
+  {
+    "input": "Business card scanned: Zoe, Staff Research Scientist at Microsoft. Tel: +1-555-326-2705. [Seq #119]",
+    "output": {
+      "action": "extract_contact",
+      "name": "Zoe",
+      "role": "Staff Research Scientist",
+      "company": "Microsoft",
+      "email": null,
+      "phone": "+1-555-326-2705"
+    },
+    "category": "contact_extraction"
+  },
+  {
+    "input": "Business card scanned: Xavier, Senior ML Engineer at DeepMind. Tel: +1-555-163-3476. [Seq #140]",
+    "output": {
+      "action": "extract_contact",
+      "name": "Xavier",
+      "role": "Senior ML Engineer",
+      "company": "DeepMind",
+      "email": null,
+      "phone": "+1-555-163-3476"
+    },
+    "category": "contact_extraction"
+  },
+  {
+    "input": "Book a call with Rahul for marketing campaign retrospection coming Tuesday at 5 PM.",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Rahul",
+      "date": "coming Tuesday",
+      "time": "17:00",
+      "topic": "marketing campaign retrospection"
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Set up a sync with Dmitri at 6:30 PM on 2026-12-01 to discuss database migration audit. [Seq #126]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Dmitri",
+      "date": "2026-12-01",
+      "time": "18:30",
+      "topic": "database migration audit"
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Meeting with Priya at 2 PM the 4th of July. [Seq #144]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Priya",
+      "date": "the 4th of July",
+      "time": "14:00",
+      "topic": null
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Add task 'implement OAuth2 authentication flow' with medium priority due next weekend assigned to Mei. [Seq #76]",
+    "output": {
+      "action": "manage_task",
+      "task": "implement OAuth2 authentication flow",
+      "priority": "medium",
+      "due_date": "next weekend",
+      "assignee": "Mei"
+    },
+    "category": "task_management"
+  },
+  {
+    "input": "Create a new task: benchmark quantized model latency on Apple M2 due next weekend. [Seq #74]",
+    "output": {
+      "action": "manage_task",
+      "task": "benchmark quantized model latency on Apple M2",
+      "priority": "medium",
+      "due_date": "next weekend",
+      "assignee": null
+    },
+    "category": "task_management"
+  },
+  {
+    "input": "Set up a sync with Zoe at 9 AM on 2026-12-01 to discuss marketing campaign retrospection.",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Zoe",
+      "date": "2026-12-01",
+      "time": "09:00",
+      "topic": "marketing campaign retrospection"
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Don't forget to update dependencies in requirements.txt at 5 PM Jan 10, 2027! [Seq #106]",
+    "output": {
+      "action": "create_reminder",
+      "reminder": "update dependencies in requirements.txt",
+      "date": "Jan 10, 2027",
+      "time": "17:00"
+    },
+    "category": "reminder_creation"
+  },
+  {
+    "input": "Task: implement OAuth2 authentication flow. Urgent! [Seq #171]",
+    "output": {
+      "action": "manage_task",
+      "task": "implement OAuth2 authentication flow",
+      "priority": "urgent",
+      "due_date": null,
+      "assignee": null
+    },
+    "category": "task_management"
+  },
+  {
+    "input": "Write a follow-up email to Elena about AI sprint kickoff. [Seq #34]",
+    "output": {
+      "action": "draft_email",
+      "recipient": "Elena",
+      "subject": "AI sprint kickoff",
+      "tone": "follow-up"
+    },
+    "category": "email_drafting"
+  },
+  {
+    "input": "Assign task to Rohan: document API endpoints with OpenAPI specs. Priority is high. [Seq #201]",
+    "output": {
+      "action": "manage_task",
+      "task": "document API endpoints with OpenAPI specs",
+      "priority": "high",
+      "due_date": null,
+      "assignee": "Rohan"
+    },
+    "category": "task_management"
+  },
+  {
+    "input": "Don't forget to backup production Postgres databases at 16:00 Dec 15th!",
+    "output": {
+      "action": "create_reminder",
+      "reminder": "backup production Postgres databases",
+      "date": "Dec 15th",
+      "time": "16:00"
+    },
+    "category": "reminder_creation"
+  },
+  {
+    "input": "Book a call with Zoe for investor pitch rehearsal the 4th of July at 6:30 PM. [Seq #147]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Zoe",
+      "date": "the 4th of July",
+      "time": "18:30",
+      "topic": "investor pitch rehearsal"
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Assign task to Nguyễn: prepare slide deck for executive committee. Priority is urgent. [Seq #157]",
+    "output": {
+      "action": "manage_task",
+      "task": "prepare slide deck for executive committee",
+      "priority": "urgent",
+      "due_date": null,
+      "assignee": "Nguyễn"
+    },
+    "category": "task_management"
+  },
+  {
+    "input": "Create a reminder for call the dentist for checkup.",
+    "output": {
+      "action": "create_reminder",
+      "reminder": "call the dentist for checkup",
+      "date": null,
+      "time": null
+    },
+    "category": "reminder_creation"
+  },
+  {
+    "input": "Create a new task: optimize PostgreSQL indexing for users table due the 4th of July. [Seq #66]",
+    "output": {
+      "action": "manage_task",
+      "task": "optimize PostgreSQL indexing for users table",
+      "priority": "medium",
+      "due_date": "the 4th of July",
+      "assignee": null
+    },
+    "category": "task_management"
+  },
+  {
+    "input": "Remind me to check server disk usage 2026-12-01 at 5 PM. [Seq #124]",
+    "output": {
+      "action": "create_reminder",
+      "reminder": "check server disk usage",
+      "date": "2026-12-01",
+      "time": "17:00"
+    },
+    "category": "reminder_creation"
+  },
+  {
+    "input": "Add contact: Aoi (Anthropic) - Reach out via aoi@startup.ai.",
+    "output": {
+      "action": "extract_contact",
+      "name": "Aoi",
+      "role": null,
+      "company": "Anthropic",
+      "email": "aoi@startup.ai",
+      "phone": null
+    },
+    "category": "contact_extraction"
+  },
+  {
+    "input": "Meeting with François at 8 PM next Monday. [Seq #139]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "François",
+      "date": "next Monday",
+      "time": "20:00",
+      "topic": null
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Save contact: Dmitri, working as VP of Product at Meta. Email is dmitri@example.com and phone is +1-555-439-4300. [Seq #111]",
+    "output": {
+      "action": "extract_contact",
+      "name": "Dmitri",
+      "role": "VP of Product",
+      "company": "Meta",
+      "email": "dmitri@example.com",
+      "phone": "+1-555-439-4300"
+    },
+    "category": "contact_extraction"
+  },
+  {
+    "input": "Add contact: Dr. Aris Thorne (Stripe) - Reach out via dr.aristhorne@startup.ai. [Seq #37]",
+    "output": {
+      "action": "extract_contact",
+      "name": "Dr. Aris Thorne",
+      "role": null,
+      "company": "Stripe",
+      "email": "dr.aristhorne@startup.ai",
+      "phone": null
+    },
+    "category": "contact_extraction"
+  },
+  {
+    "input": "Schedule a meeting with Björn Jan 10, 2027 at 6:30 PM regarding investor pitch rehearsal. [Seq #160]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Björn",
+      "date": "Jan 10, 2027",
+      "time": "18:30",
+      "topic": "investor pitch rehearsal"
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Set a reminder: backup production Postgres databases on next weekend. [Seq #209]",
+    "output": {
+      "action": "create_reminder",
+      "reminder": "backup production Postgres databases",
+      "date": "next weekend",
+      "time": null
+    },
+    "category": "reminder_creation"
+  },
+  {
+    "input": "Set up a sync with François at noon on next Monday to discuss AI sprint kickoff.",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "François",
+      "date": "next Monday",
+      "time": "12:00",
+      "topic": "AI sprint kickoff"
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Add task 'optimize PostgreSQL indexing for users table' with low priority due next Friday assigned to Dmitri. [Seq #184]",
+    "output": {
+      "action": "manage_task",
+      "task": "optimize PostgreSQL indexing for users table",
+      "priority": "low",
+      "due_date": "next Friday",
+      "assignee": "Dmitri"
+    },
+    "category": "task_management"
+  },
+  {
+    "input": "Remind me to book flight tickets for PyCon next weekend at 6:30 PM. [Seq #128]",
+    "output": {
+      "action": "create_reminder",
+      "reminder": "book flight tickets for PyCon",
+      "date": "next weekend",
+      "time": "18:30"
+    },
+    "category": "reminder_creation"
+  },
+  {
+    "input": "Save contact: François, working as VP of Product at Google. Email is françois@university.edu and phone is +1-555-922-7870. [Seq #66]",
+    "output": {
+      "action": "extract_contact",
+      "name": "François",
+      "role": "VP of Product",
+      "company": "Google",
+      "email": "françois@university.edu",
+      "phone": "+1-555-922-7870"
+    },
+    "category": "contact_extraction"
+  },
+  {
+    "input": "Remind me to check server disk usage Jan 10, 2027 at 8 PM. [Seq #172]",
+    "output": {
+      "action": "create_reminder",
+      "reminder": "check server disk usage",
+      "date": "Jan 10, 2027",
+      "time": "20:00"
+    },
+    "category": "reminder_creation"
+  },
+  {
+    "input": "Send a quick note to Ananya checking in on client onboarding kickoff. [Seq #71]",
+    "output": {
+      "action": "draft_email",
+      "recipient": "Ananya",
+      "subject": "Follow-up: client onboarding kickoff",
+      "tone": "casual"
+    },
+    "category": "email_drafting"
+  },
+  {
+    "input": "Remind me to renew the SSL certificates next Monday at 8 PM.",
+    "output": {
+      "action": "create_reminder",
+      "reminder": "renew the SSL certificates",
+      "date": "next Monday",
+      "time": "20:00"
+    },
+    "category": "reminder_creation"
+  },
+  {
+    "input": "Can you put a meeting with Vikram on my calendar Dec 15th at 10:30 AM? [Seq #88]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Vikram",
+      "date": "Dec 15th",
+      "time": "10:30",
+      "topic": null
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Assign task to O'Connor: optimize PostgreSQL indexing for users table. Priority is medium. [Seq #129]",
+    "output": {
+      "action": "manage_task",
+      "task": "optimize PostgreSQL indexing for users table",
+      "priority": "medium",
+      "due_date": null,
+      "assignee": "O'Connor"
+    },
+    "category": "task_management"
+  },
+  {
+    "input": "Business card scanned: Rohan, Senior ML Engineer at Anthropic. Tel: +1-555-458-5205. [Seq #122]",
+    "output": {
+      "action": "extract_contact",
+      "name": "Rohan",
+      "role": "Senior ML Engineer",
+      "company": "Anthropic",
+      "email": null,
+      "phone": "+1-555-458-5205"
+    },
+    "category": "contact_extraction"
+  },
+  {
+    "input": "Save contact: Xavier, working as Staff Research Scientist at Microsoft. Email is xavier@university.edu and phone is +1-555-942-1681.",
+    "output": {
+      "action": "extract_contact",
+      "name": "Xavier",
+      "role": "Staff Research Scientist",
+      "company": "Microsoft",
+      "email": "xavier@university.edu",
+      "phone": "+1-555-942-1681"
+    },
+    "category": "contact_extraction"
+  },
+  {
+    "input": "Business card scanned: Xavier, Chief Architect at Stripe. Tel: +1-555-342-6210. [Seq #107]",
+    "output": {
+      "action": "extract_contact",
+      "name": "Xavier",
+      "role": "Chief Architect",
+      "company": "Stripe",
+      "email": null,
+      "phone": "+1-555-342-6210"
+    },
+    "category": "contact_extraction"
+  },
+  {
+    "input": "Set a reminder: book flight tickets for PyCon on next Friday.",
+    "output": {
+      "action": "create_reminder",
+      "reminder": "book flight tickets for PyCon",
+      "date": "next Friday",
+      "time": null
+    },
+    "category": "reminder_creation"
+  },
+  {
+    "input": "Add event 'Hackathon Day 1' on 2026-12-01 at 6:30 PM in Auditorium. [Seq #46]",
+    "output": {
+      "action": "calendar_event",
+      "event_title": "Hackathon Day 1",
+      "date": "2026-12-01",
+      "time": "18:30",
+      "location": "Auditorium"
+    },
+    "category": "calendar_events"
+  },
+  {
+    "input": "Put Hackathon Day 1 on calendar for tomorrow at Building 42 Room 101. [Seq #81]",
+    "output": {
+      "action": "calendar_event",
+      "event_title": "Hackathon Day 1",
+      "date": "tomorrow",
+      "time": null,
+      "location": "Building 42 Room 101"
+    },
+    "category": "calendar_events"
+  },
+  {
+    "input": "Save contact: O'Connor, working as VP of Product at Stripe. Email is oconnor@startup.ai and phone is +1-555-414-5825. [Seq #117]",
+    "output": {
+      "action": "extract_contact",
+      "name": "O'Connor",
+      "role": "VP of Product",
+      "company": "Stripe",
+      "email": "oconnor@startup.ai",
+      "phone": "+1-555-414-5825"
+    },
+    "category": "contact_extraction"
+  },
+  {
+    "input": "Business card scanned: Jean-Luc, VP of Product at Microsoft. Tel: +1-555-824-6846. [Seq #116]",
+    "output": {
+      "action": "extract_contact",
+      "name": "Jean-Luc",
+      "role": "VP of Product",
+      "company": "Microsoft",
+      "email": null,
+      "phone": "+1-555-824-6846"
+    },
+    "category": "contact_extraction"
+  },
+  {
+    "input": "Send a quick note to Mei checking in on Q3 roadmap review.",
+    "output": {
+      "action": "draft_email",
+      "recipient": "Mei",
+      "subject": "Follow-up: Q3 roadmap review",
+      "tone": "casual"
+    },
+    "category": "email_drafting"
+  },
+  {
+    "input": "Set up a sync with Björn at noon on the 4th of July to discuss AI sprint kickoff.",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Björn",
+      "date": "the 4th of July",
+      "time": "12:00",
+      "topic": "AI sprint kickoff"
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Task: fix memory leak in worker daemon. Urgent! [Seq #107]",
+    "output": {
+      "action": "manage_task",
+      "task": "fix memory leak in worker daemon",
+      "priority": "urgent",
+      "due_date": null,
+      "assignee": null
+    },
+    "category": "task_management"
+  },
+  {
+    "input": "Draft an email to Vikram regarding client onboarding kickoff. [Seq #51]",
+    "output": {
+      "action": "draft_email",
+      "recipient": "Vikram",
+      "subject": "client onboarding kickoff",
+      "tone": "professional"
+    },
+    "category": "email_drafting"
+  },
+  {
+    "input": "Send a quick note to Zoe checking in on hiring committee briefing. [Seq #62]",
+    "output": {
+      "action": "draft_email",
+      "recipient": "Zoe",
+      "subject": "Follow-up: hiring committee briefing",
+      "tone": "casual"
+    },
+    "category": "email_drafting"
+  },
+  {
+    "input": "Meeting with Liam at 6:30 PM next Friday. [Seq #64]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Liam",
+      "date": "next Friday",
+      "time": "18:30",
+      "topic": null
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Save contact: O'Connor, working as Senior ML Engineer at DeepMind. Email is oconnor@deepmind.google and phone is +1-555-343-2571. [Seq #132]",
+    "output": {
+      "action": "extract_contact",
+      "name": "O'Connor",
+      "role": "Senior ML Engineer",
+      "company": "DeepMind",
+      "email": "oconnor@deepmind.google",
+      "phone": "+1-555-343-2571"
+    },
+    "category": "contact_extraction"
+  },
+  {
+    "input": "Write a follow-up email to François about budget allocation sync.",
+    "output": {
+      "action": "draft_email",
+      "recipient": "François",
+      "subject": "budget allocation sync",
+      "tone": "follow-up"
+    },
+    "category": "email_drafting"
+  },
+  {
+    "input": "Sync at 17:00. [Variant #72]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": null,
+      "date": null,
+      "time": "17:00",
+      "topic": null
+    },
+    "category": "edge_cases"
+  },
+  {
+    "input": "Set up a sync with Mei at 8 PM on this evening to discuss hiring committee briefing.",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Mei",
+      "date": "this evening",
+      "time": "20:00",
+      "topic": "hiring committee briefing"
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Task: fix memory leak in worker daemon. Urgent! [Seq #55]",
+    "output": {
+      "action": "manage_task",
+      "task": "fix memory leak in worker daemon",
+      "priority": "urgent",
+      "due_date": null,
+      "assignee": null
+    },
+    "category": "task_management"
+  },
+  {
+    "input": "Set up a sync with Dmitri at 6:30 PM on next Monday to discuss hiring committee briefing. [Seq #121]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Dmitri",
+      "date": "next Monday",
+      "time": "18:30",
+      "topic": "hiring committee briefing"
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Assign task to Søren: document API endpoints with OpenAPI specs. Priority is low. [Seq #197]",
+    "output": {
+      "action": "manage_task",
+      "task": "document API endpoints with OpenAPI specs",
+      "priority": "low",
+      "due_date": null,
+      "assignee": "Søren"
+    },
+    "category": "task_management"
+  },
+  {
+    "input": "Don't forget to book flight tickets for PyCon at 6:30 PM Jan 10, 2027! [Seq #122]",
+    "output": {
+      "action": "create_reminder",
+      "reminder": "book flight tickets for PyCon",
+      "date": "Jan 10, 2027",
+      "time": "18:30"
+    },
+    "category": "reminder_creation"
+  },
+  {
+    "input": "Book a call with Carlos for AI sprint kickoff next weekend at 5 PM.",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Carlos",
+      "date": "next weekend",
+      "time": "17:00",
+      "topic": "AI sprint kickoff"
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Create a reminder for send invoice to Acme Corp. [Seq #47]",
+    "output": {
+      "action": "create_reminder",
+      "reminder": "send invoice to Acme Corp",
+      "date": null,
+      "time": null
+    },
+    "category": "reminder_creation"
+  },
+  {
+    "input": "Create a reminder for review the pull request #402. [Seq #167]",
+    "output": {
+      "action": "create_reminder",
+      "reminder": "review the pull request #402",
+      "date": null,
+      "time": null
+    },
+    "category": "reminder_creation"
+  },
+  {
+    "input": "Don't forget to submit the quarterly tax filings at 10:30 AM Dec 15th! [Seq #138]",
+    "output": {
+      "action": "create_reminder",
+      "reminder": "submit the quarterly tax filings",
+      "date": "Dec 15th",
+      "time": "10:30"
+    },
+    "category": "reminder_creation"
+  },
+  {
+    "input": "Assign task to O'Connor: benchmark quantized model latency on Apple M2. Priority is medium. [Seq #153]",
+    "output": {
+      "action": "manage_task",
+      "task": "benchmark quantized model latency on Apple M2",
+      "priority": "medium",
+      "due_date": null,
+      "assignee": "O'Connor"
+    },
+    "category": "task_management"
+  },
+  {
+    "input": "Put Hackathon Day 1 on calendar for this evening at Conference Room A.",
+    "output": {
+      "action": "calendar_event",
+      "event_title": "Hackathon Day 1",
+      "date": "this evening",
+      "time": null,
+      "location": "Conference Room A"
+    },
+    "category": "calendar_events"
+  },
+  {
+    "input": "Set a reminder: call the dentist for checkup on next Monday. [Seq #121]",
+    "output": {
+      "action": "create_reminder",
+      "reminder": "call the dentist for checkup",
+      "date": "next Monday",
+      "time": null
+    },
+    "category": "reminder_creation"
+  },
+  {
+    "input": "Add event 'Product Launch Demo' on 2026-12-01 at 2 PM in Virtual / Zoom. [Seq #36]",
+    "output": {
+      "action": "calendar_event",
+      "event_title": "Product Launch Demo",
+      "date": "2026-12-01",
+      "time": "14:00",
+      "location": "Virtual / Zoom"
+    },
+    "category": "calendar_events"
+  },
+  {
+    "input": "Meeting with Mei at 8 PM next weekend. [Seq #264]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Mei",
+      "date": "next weekend",
+      "time": "20:00",
+      "topic": null
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Add task for Nguyễn: calibrate sensor array. [Variant #28]",
+    "output": {
+      "action": "manage_task",
+      "task": "calibrate sensor array",
+      "priority": "medium",
+      "due_date": null,
+      "assignee": "Nguyễn"
+    },
+    "category": "edge_cases"
+  },
+  {
+    "input": "Business card scanned: Priya, Staff Research Scientist at Anthropic. Tel: +1-555-544-2900. [Seq #56]",
+    "output": {
+      "action": "extract_contact",
+      "name": "Priya",
+      "role": "Staff Research Scientist",
+      "company": "Anthropic",
+      "email": null,
+      "phone": "+1-555-544-2900"
+    },
+    "category": "contact_extraction"
+  },
+  {
+    "input": "Add task 'benchmark quantized model latency on Apple M2' with low priority due next Friday assigned to Sneha. [Seq #96]",
+    "output": {
+      "action": "manage_task",
+      "task": "benchmark quantized model latency on Apple M2",
+      "priority": "low",
+      "due_date": "next Friday",
+      "assignee": "Sneha"
+    },
+    "category": "task_management"
+  },
+  {
+    "input": "Book a call with Mei for AI sprint kickoff the 4th of July at 8 PM. [Seq #72]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Mei",
+      "date": "the 4th of July",
+      "time": "20:00",
+      "topic": "AI sprint kickoff"
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Task: document API endpoints with OpenAPI specs. Urgent! [Seq #79]",
+    "output": {
+      "action": "manage_task",
+      "task": "document API endpoints with OpenAPI specs",
+      "priority": "urgent",
+      "due_date": null,
+      "assignee": null
+    },
+    "category": "task_management"
+  },
+  {
+    "input": "Book a call with Rohan for AI sprint kickoff 2026-12-01 at 11:45 AM. [Seq #257]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Rohan",
+      "date": "2026-12-01",
+      "time": "11:45",
+      "topic": "AI sprint kickoff"
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Send a quick note to Dmitri checking in on client onboarding kickoff. [Seq #101]",
+    "output": {
+      "action": "draft_email",
+      "recipient": "Dmitri",
+      "subject": "Follow-up: client onboarding kickoff",
+      "tone": "casual"
+    },
+    "category": "email_drafting"
+  },
+  {
+    "input": "Book a call with Dr. Aris Thorne for frontend architecture refactor this evening at 10:30 AM. [Seq #182]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Dr. Aris Thorne",
+      "date": "this evening",
+      "time": "10:30",
+      "topic": "frontend architecture refactor"
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Schedule a meeting with Amit tomorrow at 5 PM regarding budget allocation sync. [Seq #55]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Amit",
+      "date": "tomorrow",
+      "time": "17:00",
+      "topic": "budget allocation sync"
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Schedule a meeting with Priya tomorrow at 16:00 regarding marketing campaign retrospection. [Seq #75]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Priya",
+      "date": "tomorrow",
+      "time": "16:00",
+      "topic": "marketing campaign retrospection"
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Meeting with Fatima at noon 2026-12-01. [Seq #89]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Fatima",
+      "date": "2026-12-01",
+      "time": "12:00",
+      "topic": null
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Can you put a meeting with Søren on my calendar 2026-12-01 at 11:45 AM?",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Søren",
+      "date": "2026-12-01",
+      "time": "11:45",
+      "topic": null
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Save contact: Tariq, working as VP of Product at DeepMind. Email is tariq@example.com and phone is +1-555-122-2056. [Seq #93]",
+    "output": {
+      "action": "extract_contact",
+      "name": "Tariq",
+      "role": "VP of Product",
+      "company": "DeepMind",
+      "email": "tariq@example.com",
+      "phone": "+1-555-122-2056"
+    },
+    "category": "contact_extraction"
+  },
+  {
+    "input": "Add event 'Product Launch Demo' on next Monday at 8 PM in Conference Room A. [Seq #34]",
+    "output": {
+      "action": "calendar_event",
+      "event_title": "Product Launch Demo",
+      "date": "next Monday",
+      "time": "20:00",
+      "location": "Conference Room A"
+    },
+    "category": "calendar_events"
+  },
+  {
+    "input": "Don't forget to backup production Postgres databases at 5 PM tomorrow! [Seq #194]",
+    "output": {
+      "action": "create_reminder",
+      "reminder": "backup production Postgres databases",
+      "date": "tomorrow",
+      "time": "17:00"
+    },
+    "category": "reminder_creation"
+  },
+  {
+    "input": "Meeting with Carlos at 2 PM next Monday.",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Carlos",
+      "date": "next Monday",
+      "time": "14:00",
+      "topic": null
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Add contact: Chen (Meta) - Reach out via chen@techcorp.io. [Seq #133]",
+    "output": {
+      "action": "extract_contact",
+      "name": "Chen",
+      "role": null,
+      "company": "Meta",
+      "email": "chen@techcorp.io",
+      "phone": null
+    },
+    "category": "contact_extraction"
+  },
+  {
+    "input": "Put Hackathon Day 1 on calendar for this evening at Auditorium. [Seq #75]",
+    "output": {
+      "action": "calendar_event",
+      "event_title": "Hackathon Day 1",
+      "date": "this evening",
+      "time": null,
+      "location": "Auditorium"
+    },
+    "category": "calendar_events"
+  },
+  {
+    "input": "Write a follow-up email to Nguyễn about AI sprint kickoff. [Seq #52]",
+    "output": {
+      "action": "draft_email",
+      "recipient": "Nguyễn",
+      "subject": "AI sprint kickoff",
+      "tone": "follow-up"
+    },
+    "category": "email_drafting"
+  },
+  {
+    "input": "Call Björn back tomorrow morning at 9 AM. [Variant #47]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Björn",
+      "date": "tomorrow",
+      "time": "09:00",
+      "topic": "call back"
+    },
+    "category": "edge_cases"
+  },
+  {
+    "input": "Write a standard email to Dr. Aris Thorne about marketing campaign retrospection. [Seq #124]",
+    "output": {
+      "action": "draft_email",
+      "recipient": "Dr. Aris Thorne",
+      "subject": "marketing campaign retrospection",
+      "tone": "standard"
+    },
+    "category": "email_drafting"
+  },
+  {
+    "input": "Create a new task: fix memory leak in worker daemon due next Monday. [Seq #170]",
+    "output": {
+      "action": "manage_task",
+      "task": "fix memory leak in worker daemon",
+      "priority": "medium",
+      "due_date": "next Monday",
+      "assignee": null
+    },
+    "category": "task_management"
+  },
+  {
+    "input": "Add event 'Board of Directors Assembly' on next Friday at 5 PM in Building 42 Room 101. [Seq #66]",
+    "output": {
+      "action": "calendar_event",
+      "event_title": "Board of Directors Assembly",
+      "date": "next Friday",
+      "time": "17:00",
+      "location": "Building 42 Room 101"
+    },
+    "category": "calendar_events"
+  },
+  {
+    "input": "Put Hackathon Day 1 on calendar for coming Tuesday at Virtual / Zoom. [Seq #25]",
+    "output": {
+      "action": "calendar_event",
+      "event_title": "Hackathon Day 1",
+      "date": "coming Tuesday",
+      "time": null,
+      "location": "Virtual / Zoom"
+    },
+    "category": "calendar_events"
+  },
+  {
+    "input": "Send a quick note to Ananya checking in on hiring committee briefing. [Seq #47]",
+    "output": {
+      "action": "draft_email",
+      "recipient": "Ananya",
+      "subject": "Follow-up: hiring committee briefing",
+      "tone": "casual"
+    },
+    "category": "email_drafting"
+  },
+  {
+    "input": "Write a follow-up email to Elena about Q3 roadmap review.",
+    "output": {
+      "action": "draft_email",
+      "recipient": "Elena",
+      "subject": "Q3 roadmap review",
+      "tone": "follow-up"
+    },
+    "category": "email_drafting"
+  },
+  {
+    "input": "Meeting tomorrow.",
+    "output": {
+      "action": "schedule_meeting",
+      "person": null,
+      "date": "tomorrow",
+      "time": null,
+      "topic": null
+    },
+    "category": "edge_cases"
+  },
+  {
+    "input": "Business card scanned: Amit, Chief Architect at Acme Corp. Tel: +1-555-420-7022. [Seq #38]",
+    "output": {
+      "action": "extract_contact",
+      "name": "Amit",
+      "role": "Chief Architect",
+      "company": "Acme Corp",
+      "email": null,
+      "phone": "+1-555-420-7022"
+    },
+    "category": "contact_extraction"
+  },
+  {
+    "input": "Catch up with Dr. Aris Thorne sometime soon. [Variant #50]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Dr. Aris Thorne",
+      "date": null,
+      "time": null,
+      "topic": null
+    },
+    "category": "edge_cases"
+  },
+  {
+    "input": "Set up a sync with Björn at 6:30 PM on the 4th of July to discuss hiring committee briefing. [Seq #106]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Björn",
+      "date": "the 4th of July",
+      "time": "18:30",
+      "topic": "hiring committee briefing"
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Send a quick note to O'Connor checking in on marketing campaign retrospection. [Seq #143]",
+    "output": {
+      "action": "draft_email",
+      "recipient": "O'Connor",
+      "subject": "Follow-up: marketing campaign retrospection",
+      "tone": "casual"
+    },
+    "category": "email_drafting"
+  },
+  {
+    "input": "Don't forget to backup production Postgres databases at noon next Monday! [Seq #158]",
+    "output": {
+      "action": "create_reminder",
+      "reminder": "backup production Postgres databases",
+      "date": "next Monday",
+      "time": "12:00"
+    },
+    "category": "reminder_creation"
+  },
+  {
+    "input": "Assign task to Carlos: optimize PostgreSQL indexing for users table. Priority is medium. [Seq #209]",
+    "output": {
+      "action": "manage_task",
+      "task": "optimize PostgreSQL indexing for users table",
+      "priority": "medium",
+      "due_date": null,
+      "assignee": "Carlos"
+    },
+    "category": "task_management"
+  },
+  {
+    "input": "Business card scanned: Chen, Staff Research Scientist at Meta. Tel: +1-555-748-2525.",
+    "output": {
+      "action": "extract_contact",
+      "name": "Chen",
+      "role": "Staff Research Scientist",
+      "company": "Meta",
+      "email": null,
+      "phone": "+1-555-748-2525"
+    },
+    "category": "contact_extraction"
+  },
+  {
+    "input": "Save contact: Sophia, working as VP of Product at Google. Email is sophia@startup.ai and phone is +1-555-799-7990. [Seq #96]",
+    "output": {
+      "action": "extract_contact",
+      "name": "Sophia",
+      "role": "VP of Product",
+      "company": "Google",
+      "email": "sophia@startup.ai",
+      "phone": "+1-555-799-7990"
+    },
+    "category": "contact_extraction"
+  },
+  {
+    "input": "Business card scanned: Ananya, Data Platform Lead at Acme Corp. Tel: +1-555-195-6536. [Seq #128]",
+    "output": {
+      "action": "extract_contact",
+      "name": "Ananya",
+      "role": "Data Platform Lead",
+      "company": "Acme Corp",
+      "email": null,
+      "phone": "+1-555-195-6536"
+    },
+    "category": "contact_extraction"
+  },
+  {
+    "input": "Add task 'optimize PostgreSQL indexing for users table' with low priority due next Monday assigned to Liam. [Seq #152]",
+    "output": {
+      "action": "manage_task",
+      "task": "optimize PostgreSQL indexing for users table",
+      "priority": "low",
+      "due_date": "next Monday",
+      "assignee": "Liam"
+    },
+    "category": "task_management"
+  },
+  {
+    "input": "Create a new task: prepare slide deck for executive committee due the 4th of July. [Seq #194]",
+    "output": {
+      "action": "manage_task",
+      "task": "prepare slide deck for executive committee",
+      "priority": "medium",
+      "due_date": "the 4th of July",
+      "assignee": null
+    },
+    "category": "task_management"
+  },
+  {
+    "input": "Schedule a meeting with Dr. Aris Thorne next Friday at 8 PM regarding budget allocation sync. [Seq #215]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Dr. Aris Thorne",
+      "date": "next Friday",
+      "time": "20:00",
+      "topic": "budget allocation sync"
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Book a call with Jean-Luc for budget allocation sync the 4th of July at 9 AM. [Seq #67]",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Jean-Luc",
+      "date": "the 4th of July",
+      "time": "09:00",
+      "topic": "budget allocation sync"
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Assign task to Neha: implement OAuth2 authentication flow. Priority is high. [Seq #149]",
+    "output": {
+      "action": "manage_task",
+      "task": "implement OAuth2 authentication flow",
+      "priority": "high",
+      "due_date": null,
+      "assignee": "Neha"
+    },
+    "category": "task_management"
+  },
+  {
+    "input": "Book a call with Carlos for client onboarding kickoff tomorrow at noon.",
+    "output": {
+      "action": "schedule_meeting",
+      "person": "Carlos",
+      "date": "tomorrow",
+      "time": "12:00",
+      "topic": "client onboarding kickoff"
+    },
+    "category": "meeting_scheduling"
+  },
+  {
+    "input": "Put Hackathon Day 1 on calendar for 2026-12-01 at Building 42 Room 101. [Seq #43]",
+    "output": {
+      "action": "calendar_event",
+      "event_title": "Hackathon Day 1",
+      "date": "2026-12-01",
+      "time": null,
+      "location": "Building 42 Room 101"
+    },
+    "category": "calendar_events"
+  }
+]
